@@ -1,0 +1,13 @@
+name = "Tom's Simple Storage Retexture"
+filename = "TSS MC-SE (1.20).zip"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "5d2b5551f7fccff11139f18d2c22c089a33f37ad"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6047320
+project-id = 1170633

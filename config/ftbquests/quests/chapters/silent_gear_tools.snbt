@@ -1,0 +1,1307 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "silent_gear_tools"
+	group: "5DD9D23F04DE3000"
+	hide_quest_until_deps_complete: true
+	icon: "silentgear:pickaxe_blueprint"
+	id: "2265EC3CB849006F"
+	images: [
+		{
+			height: 1.0d
+			image: "minecraft:block/oak_sapling"
+			rotation: 0.0d
+			width: 1.0d
+			x: -1.5d
+			y: 3.5d
+		}
+		{
+			height: 1.0d
+			image: "biomesoplenty:block/flowering_oak_sapling"
+			rotation: 0.0d
+			width: 1.0d
+			x: 1.5d
+			y: 3.5d
+		}
+		{
+			height: 1.0d
+			image: "silentgear:item/blueprint_paper"
+			rotation: 0.0d
+			width: 1.0d
+			x: -3.5d
+			y: 6.5d
+		}
+		{
+			height: 1.0d
+			image: "silentgear:item/crude_repair_kit"
+			rotation: 0.0d
+			width: 1.0d
+			x: -3.5d
+			y: 2.0d
+		}
+		{
+			height: 2.8d
+			image: "kubejs:block/starcharger1"
+			rotation: 0.0d
+			width: 5.0d
+			x: -9.5d
+			y: -1.0d
+		}
+	]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["348EC637AEDF7B01"]
+			description: [
+				"Let's begin from the beginning, craft a stone pickaxe the vanilla way and then put it into a crafting grid to convert it into a Silent Gear pickaxe. You will never need to discard this tool, as you can always upgrade parts to create the ultimate pickaxe!"
+				""
+				"Sidenote, when the durability runs out it doesn't break. It becomes unusable until you repair it. Handy!"
+				" "
+			]
+			id: "3E9B5333EE858B19"
+			tasks: [{
+				id: "22E36297B37AD0F0"
+				item: {
+					Count: 1
+					id: "silentgear:pickaxe"
+					tag: {
+						Damage: 0
+						SGear_Data: {
+							Construction: {
+								Parts: [
+									{
+										ID: "silentgear:pickaxe_head"
+										Item: {
+											Count: 1b
+											id: "silentgear:pickaxe_head"
+											tag: {
+												Damage: 0
+												Materials: [{
+													ID: "silentgear:stone"
+												}]
+											}
+										}
+									}
+									{
+										ID: "silentgear:rod"
+										Item: {
+											Count: 1b
+											id: "silentgear:rod"
+											tag: {
+												Materials: [{
+													ID: "silentgear:wood"
+												}]
+											}
+										}
+									}
+								]
+							}
+							Properties: {
+								HarvestTier: "minecraft:stone"
+								LockStats: 0b
+								ModVersion: "3.6.6"
+								Stats: {
+									"silentgear:attack_reach": 3.0f
+									"silentgear:attack_speed": -2.8f
+									"silentgear:charging_value": 0.5f
+									"silentgear:durability": 131.0f
+									"silentgear:enchantment_value": 5.0f
+									"silentgear:harvest_speed": 4.0f
+									"silentgear:melee_damage": 2.0f
+									"silentgear:rarity": 4.0f
+									"silentgear:repair_efficiency": 1.0f
+								}
+								Traits: [
+									{
+										Level: 1b
+										Name: "silentgear:ancient"
+									}
+									{
+										Level: 2b
+										Name: "silentgear:flexible"
+									}
+								]
+							}
+							Rendering: {
+								Model: 2
+								ModelKey: "pickaxe:pickaxe_head{stone},rod{wood},"
+							}
+						}
+						SGear_UUID: [I;
+							730078529
+							1814580147
+							-1712871465
+							1476256686
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Getting started"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3E9B5333EE858B19"]
+			description: ["Blueprints papers will be the basis for you to create all the blueprints for your gear. Unlike template boards, blueprints can be reused infinitely, it is worth the investment into blueprints as they are relatively cheap."]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "3086822E8ECA9A23"
+			tasks: [{
+				id: "62AC3B8DF221F4FC"
+				item: "silentgear:blueprint_paper"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3086822E8ECA9A23"]
+			description: ["The template board is for one time use only. If you would make a pickaxe template board, you would only be able to use it once, as the template boards will be consumed."]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "65A0112125091DCD"
+			optional: true
+			tasks: [{
+				id: "005BCA279C1B27D6"
+				item: "silentgear:template_board"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3086822E8ECA9A23"]
+			description: ["Need a way to store all your blueprints? This handy book is perfect for you to put all your blueprints inside."]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "16A9ED66DAECB457"
+			optional: true
+			tasks: [{
+				id: "7693278F7017184F"
+				item: {
+					Count: 1
+					id: "silentgear:blueprint_book"
+					tag: {
+						Inventory: { }
+					}
+				}
+				type: "item"
+			}]
+			x: -1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3086822E8ECA9A23"]
+			description: [
+				"To make it easier to understand the different tool blueprints, they are divided into Vanilla and the Silent gear additions."
+				""
+				"&2IMPORTANT TIP: if you hover over a blueprint and press Left Control, you can see which materials you need to make the item and the additions you can add."
+				""
+				"If you ever get stuck on how to craft something, you can always right click the item to see the crafting recipe, or left click on how to make it."
+			]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "49CE4F3B68BFF1F2"
+			tasks: [{
+				id: "34CA8D6BA87478DA"
+				title: "Different types of tools"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["49CE4F3B68BFF1F2"]
+			description: ["The blueprint for the trusty vanilla sword!"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "12B4F22447B9216E"
+			tasks: [{
+				id: "6226EB9970816889"
+				item: "silentgear:sword_blueprint"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["49CE4F3B68BFF1F2"]
+			description: ["I got hurt by a pickaxe once.. Don't worry, my doctor said it was only a miner injury."]
+			hide_dependency_lines: true
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "1870C28A1A5A4A30"
+			tasks: [{
+				id: "69EF3E916BA1D06B"
+				item: "silentgear:pickaxe_blueprint"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["49CE4F3B68BFF1F2"]
+			description: ["Kiss my axe."]
+			hide_dependency_lines: true
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "189EB8B380C98828"
+			tasks: [{
+				id: "05B03BB81C6BD7D7"
+				item: "silentgear:axe_blueprint"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["49CE4F3B68BFF1F2"]
+			description: ["Only a spoonful!"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "0A6387F1BAC28B79"
+			tasks: [{
+				id: "3155BCF8D5F00021"
+				item: "silentgear:shovel_blueprint"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["49CE4F3B68BFF1F2"]
+			description: ["Great for tilling!"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "456B26864FBB69A8"
+			tasks: [{
+				id: "037BA0EE7EAA86FC"
+				item: "silentgear:hoe_blueprint"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["49CE4F3B68BFF1F2"]
+			description: ["Ye ol' reliable, but better."]
+			hide_dependency_lines: true
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "0077EBDBAB862376"
+			tasks: [{
+				id: "329D2F9B15054CCF"
+				item: "silentgear:fishing_rod_blueprint"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["49CE4F3B68BFF1F2"]
+			description: ["Do you really shear so much??"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "5E73FFA2573D4260"
+			tasks: [{
+				id: "11DA5B3B79CF87A9"
+				item: "silentgear:shears_blueprint"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["49CE4F3B68BFF1F2"]
+			description: ["Comically sized fork."]
+			hide_dependency_lines: true
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "664FD3C4463FD9E6"
+			tasks: [{
+				id: "0AD4520EAB40392A"
+				item: "silentgear:trident_blueprint"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["49CE4F3B68BFF1F2"]
+			description: ["A massive upgrade to the vanilla shield."]
+			hide_dependency_lines: true
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "0B66E210F6A79E59"
+			tasks: [{
+				id: "007C9F91DBC04DAD"
+				item: "silentgear:shield_blueprint"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["49CE4F3B68BFF1F2"]
+			description: ["Don’t string me along with any bow jokes."]
+			hide_dependency_lines: true
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "0D3FDFE21BF6EB07"
+			tasks: [{
+				id: "09CADAD8D7456CA7"
+				item: "silentgear:bow_blueprint"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["49CE4F3B68BFF1F2"]
+			description: ["Crossbows are great, but some people feel like they have drawbacks.."]
+			hide_dependency_lines: true
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "5E874D6A077E313F"
+			tasks: [{
+				id: "47EB3C203B977365"
+				item: "silentgear:crossbow_blueprint"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 11.5d
+		}
+		{
+			dependencies: ["49CE4F3B68BFF1F2"]
+			description: ["You need a fletching blueprint to finish the arrow!"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "00B5803DA0D30C8A"
+			tasks: [{
+				id: "18D792A865A9A4F7"
+				item: "silentgear:arrow_blueprint"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 12.5d
+		}
+		{
+			dependencies: ["49CE4F3B68BFF1F2"]
+			description: ["Clears an area of plants. When using it on crops to harvest, they will be automatically replanted. This does destroy the seeds in the process."]
+			hide_dependency_lines: true
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "4D5991E6F080DC8F"
+			tasks: [{
+				id: "157303CBA9767F36"
+				item: "silentgear:sickle_blueprint"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["49CE4F3B68BFF1F2"]
+			description: [
+				"Combination between a hoe, shovel, and axe!"
+				"&a- Higher durability&r"
+				"&c- Slightly slower&r"
+			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "225B586CB4674B36"
+			tasks: [{
+				id: "6C8A731B7411E763"
+				item: "silentgear:mattock_blueprint"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["49CE4F3B68BFF1F2"]
+			description: ["Mines soil in a 3x3 area. Now this is a true comically large spoon."]
+			hide_dependency_lines: true
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "5E06C0E4F94C1620"
+			tasks: [{
+				id: "15C229BCADBAD915"
+				item: "silentgear:excavator_blueprint"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["49CE4F3B68BFF1F2"]
+			description: ["Take down trees on one fell swoop! Although, there is a mod for this already so I guess its slightly redundant."]
+			hide_dependency_lines: true
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "60D3C0C1CB6B085A"
+			tasks: [{
+				id: "315DCB028D28F030"
+				item: "silentgear:saw_blueprint"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["49CE4F3B68BFF1F2"]
+			description: [
+				"Need a combination of a pickaxe, axe, and shovel? This will be your best friend!"
+				"&a- Combines your most essential tools&r"
+				"&a- Higher durability&r"
+				"&c- Penalty to harvesting speed&r"
+				"&c- Lower enchantability (makes it slightly more difficult to get high enchants)&r"
+			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "561E2D68022F9E97"
+			tasks: [{
+				id: "08858CD20ECBF001"
+				item: "silentgear:paxel_blueprint"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["49CE4F3B68BFF1F2"]
+			description: ["Mines ores and stones in a 3x3 area! Obviously, if you want to mine the ores you need to target them."]
+			hide_dependency_lines: true
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "654D013945AF7849"
+			tasks: [{
+				id: "7266CAE0A1D0E6F9"
+				item: "silentgear:hammer_blueprint"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["49CE4F3B68BFF1F2"]
+			description: ["Can work as a regular pickaxe. Right clicking with this one will search a small area for blocks of interest (such as ores)."]
+			hide_dependency_lines: true
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "02D67C9472B587F1"
+			tasks: [{
+				id: "1CEC0CD6BA87707B"
+				item: "silentgear:prospector_hammer_blueprint"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["49CE4F3B68BFF1F2"]
+			description: [
+				"Funny ranged weapon!"
+				"&a- Fast draw speed&r"
+				"&c- Low damage&r"
+				"- Can only fire pebbles"
+			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "27EAC4380CD220CC"
+			tasks: [{
+				id: "189B10788FFD1EC9"
+				item: "silentgear:slingshot_blueprint"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["49CE4F3B68BFF1F2"]
+			description: [
+				"Vanilla sword too boring? Are you a weeb? The katana will be your favourite alternative!"
+				"&a- Slightly faster attack speed&r"
+				"&a- Slightly farther reach&r"
+				"&c- Slightly less damage&r"
+			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "5530463546938BFD"
+			tasks: [{
+				id: "440ACA64AF669AC7"
+				item: "silentgear:katana_blueprint"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["49CE4F3B68BFF1F2"]
+			description: [
+				"Sword, axe and sickle combined! Handy for clearing out plants. Works best as a sword!"
+				"&a- Higher damage than vanilla swords&r"
+				"&a- Similar function to sickles,&r &cbut smaller in comparison&r"
+				"&c- Slower attack speed&r"
+			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "637F7ACC48DAF06F"
+			tasks: [{
+				id: "7047BE98CB063522"
+				item: "silentgear:machete_blueprint"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["49CE4F3B68BFF1F2"]
+			description: [
+				"Alternative to swords!"
+				"&a- Higher reach, great for keeping enemies on a distance!&r"
+				"&c- Lower damage than a normal sword&r"
+			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "369C45379E00B2DF"
+			tasks: [{
+				id: "1B2CA4C4469149C0"
+				item: "silentgear:spear_blueprint"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["49CE4F3B68BFF1F2"]
+			description: ["Same as the dagger, except this has a &ahigher durability&r!"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "3A37252FF6C14C1C"
+			tasks: [{
+				id: "5ABF08FD86146BF3"
+				item: "silentgear:knife_blueprint"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["49CE4F3B68BFF1F2"]
+			description: [
+				"Miss ol' minecrafts spam clicking combat?"
+				"&a- Very fast attack speed&r"
+				"&a- Reduces target's invulnerability time&r"
+				"&c- Lower damage&r"
+				"&c- Lower reach&r"
+			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "52F8E7CFE456B671"
+			tasks: [{
+				id: "7C23A4DD12EF44CA"
+				item: "silentgear:dagger_blueprint"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["27EAC4380CD220CC"]
+			description: ["Craft any cobblestone with a hammer to get this!"]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "72C55D4EA5F315A9"
+			tasks: [{
+				id: "1C640AB276E4354E"
+				item: "silentgear:pebble"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 11.5d
+		}
+		{
+			dependencies: ["2C8382DD205E93D1"]
+			description: ["Essential for every tool, you need something to grip onto."]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "1F6C91D1A7BB2858"
+			tasks: [{
+				id: "5B95888C0EFE6591"
+				item: "silentgear:rod_blueprint"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["2C8382DD205E93D1"]
+			description: ["Make your tool a bit more comfy to hold, wont ya?"]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "2FBCBE769896A664"
+			tasks: [{
+				id: "4D7D17A3B84EC1F7"
+				item: "silentgear:grip_blueprint"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["2C8382DD205E93D1"]
+			description: ["\"Tie me up!!\" - your pickaxe, probably"]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "31AB66871B3BB6A7"
+			tasks: [{
+				id: "63EA62EE92C0BAA2"
+				item: "silentgear:binding_blueprint"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["2C8382DD205E93D1"]
+			description: ["No more smithing template needed for upgrading to netherite. This is your replacement!"]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "12EF20BB4732F06F"
+			tasks: [{
+				id: "6922D3B0FA7C501A"
+				item: "silentgear:coating_blueprint"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["2C8382DD205E93D1"]
+			description: ["(insert pecker joke)"]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "2224645D3FA250F9"
+			tasks: [{
+				id: "0C0D8A8F7804A17D"
+				item: "silentgear:tip_blueprint"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["49CE4F3B68BFF1F2"]
+			description: ["The different parts used for tools. The only necessity is a rod, the rest are optional (but highly recommended)"]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "2C8382DD205E93D1"
+			tasks: [{
+				id: "65415B2589BD8F43"
+				title: "Parts"
+				type: "checkmark"
+			}]
+			x: -7.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2C8382DD205E93D1"]
+			description: ["Holding on with a string!"]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "5ED7758EF1236557"
+			tasks: [{
+				id: "088E9392E3ADE1A0"
+				item: "silentgear:cord_blueprint"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["2C8382DD205E93D1"]
+			description: ["Want to give your pickaxe the powers of a shovel too without turning it into a paxel? This upgrade here will give you the best of both worlds."]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "19E66B18AEB8C900"
+			tasks: [{
+				id: "2F38BE16BFAD8805"
+				item: "silentgear:spoon_upgrade"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["2C8382DD205E93D1"]
+			description: ["Excavators can now make 3x3 paths, make paths like never before!"]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "31726E2B0E8412DB"
+			tasks: [{
+				id: "401E9FFEE4584520"
+				item: "silentgear:road_maker_upgrade"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["2C8382DD205E93D1"]
+			description: ["Need extra OOMPH for your excavator or hammer? This will give an extra block radius (not stackable)."]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "3792857107D4FE6B"
+			tasks: [{
+				id: "3AF76A0EAD12076C"
+				item: "silentgear:wide_plate_upgrade"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["2C8382DD205E93D1"]
+			description: ["Allows your item to break. Why would you add this?"]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "43087A45FC0F45F4"
+			tasks: [{
+				id: "4F06A31822F6C805"
+				item: "silentgear:red_card_upgrade"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["2C8382DD205E93D1"]
+			description: ["Only useable for arrows."]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "54EF4278CE757E48"
+			tasks: [{
+				id: "2ABBAD8D459A627A"
+				item: "silentgear:fletching_blueprint"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["49CE4F3B68BFF1F2"]
+			description: [
+				"The different workstations in Silent gear allow you to modify or create stronger materials that you can use to upgrade your gear."
+				""
+				"The two workstations above, Grader and Starlight charger differ from the other workstations because they need catalysts to upgrade the material. You can both grade and starcharge a material, if you do both you can get really strong gear!"
+			]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "6487F72CDEB8F500"
+			tasks: [{
+				id: "00113A13E5FB9D34"
+				title: "Workstations"
+				type: "checkmark"
+			}]
+			x: -5.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6487F72CDEB8F500"]
+			description: [
+				"The salvager is handy if you find gear and want to break it down for it's materials. It can break down nearly everything! The amount of materials you receive depends on the durability of the item."
+				""
+				"Found some diamond chestplates in the end? Snag them with you to break them down!"
+			]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "7542A29ED6C680C8"
+			tasks: [{
+				id: "780FE35A6083F554"
+				item: "silentgear:salvager"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["6487F72CDEB8F500"]
+			description: [
+				"The material grader significantly boosts the quality of your materials. The different types of grades are: E, D, C, B, A, S, SS, SSS, MAX. The last one obviously being the best for your material, but also the most difficult to obtain."
+				""
+				"In order to begin grading, put the ingot in the top slot of the grader, and the catalyst at the bottom. The higher tier catalyst, the better your odds are at getting high grade materials. The grading system works like a gacha, if you have extreme luck, you might even get MAX tier with the lowest catalyst (heads up, thats near impossible). Regardless, you can always regrade materials as long as they are below MAX."
+				""
+				"&2Tip: You can easily regrade materials by leaving them in the grading slot. For example, if you have an S tier iron ingot, and let it stay there, it won't regrade the iron ingot if it gets a lower value. The iron ingot will only go through if it gets SS tier or higher, however the catalyst always gets consumed for each grading."
+			]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "0F79EFCC05849EB2"
+			tasks: [{
+				id: "44822437BAEC5B1B"
+				item: "silentgear:material_grader"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6487F72CDEB8F500"]
+			description: [
+				"The metal alloyer allows you to create new metals with up to 4 "
+				"ingots. Note that the grade and starlight charge affects the result of your alloy."
+				""
+				"Afterwards you can starlight charge and grade your new ingot again for an even stronger ingot!"
+			]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "77DCEC8A4B523A36"
+			tasks: [{
+				id: "01FD1C781D5C82FC"
+				item: "silentgear:metal_alloyer"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["6487F72CDEB8F500"]
+			description: ["The gem recrystallizer is the same as the metal alloyer, except it is for gems instead of ingots."]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "207E16A79DD59BE2"
+			tasks: [{
+				id: "4BC2E6BF47C71F36"
+				item: "silentgear:recrystallizer"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["6487F72CDEB8F500"]
+			description: ["The refabricator is the same as the metal alloyer, except it is for fabric/cloth/slime instead of ingots."]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "62C834621CC00A07"
+			tasks: [{
+				id: "6471150CBB600201"
+				item: "silentgear:refabricator"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["6487F72CDEB8F500"]
+			description: ["End game workstation. This is if you truly want to create the strongest gear. After processing your alloys through the metal press and grade and starcharge them, you can turn them into metal sheets, after which you can grade and starcharge them again to get the maximum stats on all your items."]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "254856FF3202A884"
+			tasks: [{
+				id: "3C9AAC2A227C9E96"
+				item: "silentgear:metal_press"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["49CE4F3B68BFF1F2"]
+			description: ["Repair kits can help you repair your armor and tools. You can make more advanced toolkits to get more repair efficiency, which uses up less resources and repairs more!"]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "7672D2223D456B55"
+			tasks: [{
+				id: "5ED6433E28970FDA"
+				item: {
+					Count: 1
+					id: "silentgear:very_crude_repair_kit"
+					tag: {
+						Storage: { }
+					}
+				}
+				type: "item"
+			}]
+			x: -3.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["49CE4F3B68BFF1F2"]
+			description: [
+				"Unfortunately it's near impossible to write down all the materials for Silent Gear without using an excel spreadsheet, instead try experimenting! See what materials you have and what fits you the best."
+				""
+				"There are many possibilities, but you can always look up guides if you want to really max out your tools."
+			]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "0B62AEDE6AF5C330"
+			shape: "gear"
+			tasks: [{
+				id: "568359234A353653"
+				title: "Materials"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["49CE4F3B68BFF1F2"]
+			description: [
+				"Want to make your own gear? Style it YOUR way? Now you can, using your own alloys and materials you can create whatever you want!"
+				""
+				"Above are the parts you can add to your armor."
+			]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "484C2F900E150AE2"
+			tasks: [{
+				id: "4861A236E984E316"
+				title: "Armor"
+				type: "checkmark"
+			}]
+			title: "Armor and equipment"
+			x: 5.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["484C2F900E150AE2"]
+			description: ["It would be nice to have some protection when taking an arrow to the head.."]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "38144042E21505AA"
+			tasks: [{
+				id: "12C34BCF697BAC65"
+				item: "silentgear:helmet_blueprint"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["484C2F900E150AE2"]
+			description: ["I guess I can take a stab with this..?"]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "39168C6274FDB177"
+			tasks: [{
+				id: "077B13EF5646C6C0"
+				item: "silentgear:chestplate_blueprint"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["484C2F900E150AE2"]
+			description: ["Mon armour.."]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "59F62481B2C90282"
+			tasks: [{
+				id: "402BA9FA7AD157A1"
+				item: "silentgear:leggings_blueprint"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["484C2F900E150AE2"]
+			description: ["Sorry babe, the MAX grade starcharged tyrian steel boots stay ON during gaming sessions!"]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "47C5D7B677E7431D"
+			tasks: [{
+				id: "49FF39BDA30ABFAD"
+				item: "silentgear:boots_blueprint"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["484C2F900E150AE2"]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "377F4CA745F86DD2"
+			tasks: [{
+				id: "375E522C300EF111"
+				item: "silentgear:elytra_blueprint"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["42CB7354DDDADEA5"]
+			description: ["Will you.. marry me..? In minecraft, obviously."]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "59DBC4F5B3BAAB26"
+			tasks: [{
+				id: "34F82C0FD49A6BE4"
+				item: "silentgear:ring_blueprint"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["42CB7354DDDADEA5"]
+			description: ["Wrist-taker, heartbreaker!"]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "7D18630905B17080"
+			tasks: [{
+				id: "126C6DCCF8A9C5E9"
+				item: "silentgear:bracelet_blueprint"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["484C2F900E150AE2"]
+			description: ["Lining does sound important for clothes.."]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "04FB665E46E259E8"
+			tasks: [{
+				id: "661F50D0330FC1E6"
+				item: "silentgear:lining_blueprint"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["484C2F900E150AE2"]
+			description: ["The coating upgrade is necessary for upgrading your gear to Netherite tier!"]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "44F17C512445E2BC"
+			tasks: [{
+				id: "7163A2EA5D85BFB1"
+				item: "silentgear:coating_blueprint"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["484C2F900E150AE2"]
+			description: ["something something.. me with yo momma?"]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "6A5AA346DBBE49CA"
+			tasks: [{
+				id: "05BCAD3D29BB18D1"
+				item: "silentgear:tip_blueprint"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0B62AEDE6AF5C330"]
+			description: [
+				"Silent gems is a whole other can of worms. You can socket gems into your gear to gain special effects!"
+				""
+				"Same goes for rings and bracelets, which you can put on."
+			]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "36FA58104532424B"
+			shape: "gear"
+			tasks: [{
+				id: "798EF3D4ECDD1F10"
+				title: "Silent gems"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["36FA58104532424B"]
+			description: [
+				"Use this to make adornments assemble your rings/bracelets."
+				""
+				"Don't forget you can coat the rings and bracelets too!"
+			]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "42CB7354DDDADEA5"
+			tasks: [{
+				id: "2F5BA774FB444C6B"
+				item: "silentgear:jeweler_tools"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["0F79EFCC05849EB2"]
+			description: ["Tier 1 grading catalyst."]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "709055D71D83B34E"
+			tasks: [{
+				id: "5E6E70D0AC8D1E5A"
+				item: "silentgear:glowing_dust"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["709055D71D83B34E"]
+			description: ["Tier 2 grading catalyst."]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "5D2E5481089F5495"
+			tasks: [{
+				id: "7B7F23A2709C14A7"
+				item: "silentgear:blazing_dust"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5D2E5481089F5495"]
+			description: ["Tier 3 grading catalyst."]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "008D2EEE02EA750B"
+			tasks: [{
+				id: "1ADBF2E91F63639F"
+				item: "silentgear:glittery_dust"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6487F72CDEB8F500"]
+			description: ["The starlight charger is a lategame setup that gives you the opportunity to fully max out your materials. The starcharger itself is not enough, you will need to build a set up with pillars around it for it to work. Also, it will need to \"charge\" energy beforehand, which can only be done at night."]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "39FF750D289EF031"
+			tasks: [{
+				id: "51C621804C8FBF0A"
+				item: "silentgear:starlight_charger"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0DAB9D8133CDC4C2"]
+			description: ["Tier 3 starlight charger catalyst."]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "0450CA816427197A"
+			tasks: [{
+				id: "5BDF1A251CB2D4D7"
+				item: "silentgear:starmetal_dust"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["062DD688E7C8296B"]
+			description: ["Tier 2 starlight charger catalyst."]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "0DAB9D8133CDC4C2"
+			tasks: [{
+				id: "516EEEED06C49662"
+				item: "silentgear:azure_silver_dust"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["39FF750D289EF031"]
+			description: ["Tier 1 starlight charger catalyst."]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "062DD688E7C8296B"
+			tasks: [{
+				id: "4C3168F91A62B624"
+				item: "silentgear:blaze_gold_dust"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["39FF750D289EF031"]
+			description: [
+				"The setup for the starlight charger needs to be built like the image above, the andesite blocks can be swapped out for any other blocks. The most important is the Crimson steel on top of the pillars. The 4 crimson steel blocks will give you Starcharged I on your material."
+				""
+				"To get a higher tier of starlight charger, you need to replace the crimson steel with azure electrum blocks. This will give you Starcharged II."
+				""
+				"For the final tier, Starcharged III you will need to replace the blocks azure electrum blocks with tyrian steel blocks."
+				""
+				"Tier 2 starlight charger:"
+				"{image:kubejs:block/starcharger2 width:180 height:100 align:center}"
+				""
+				"Tier 3 starlight charger:"
+				"{image:kubejs:block/starcharger3 width:180 height:100 align:center}"
+				""
+				"Remember, the starlight charger only charges at night!"
+			]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "35D84CA7041DE74F"
+			tasks: [{
+				id: "3029E5042EE9B227"
+				title: "Starcharger setup"
+				type: "checkmark"
+			}]
+			title: "Starlight charger setup"
+			x: -9.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2C8382DD205E93D1"]
+			description: [
+				"Works the same as a coating upgrade, I guess?"
+				""
+				"The coating upgrade does sound easier to craft rather than a template upgrade.."
+				""
+				"&6Dev note: yeah I cannot figure this one out.&r"
+			]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "55223A3F44A5010A"
+			tasks: [{
+				id: "68B9AF30B04ABA4C"
+				item: "silentgear:coating_smithing_template"
+				type: "item"
+			}]
+			x: -9.5d
+			y: 3.0d
+		}
+	]
+	title: "Silent gear"
+}

@@ -1,0 +1,41 @@
+[
+  {
+    "user": {
+      "type": "player",
+      "name": "BackstageSam",
+      "uniqueId": "e8aa919a-fa63-48a1-a423-20b6f2e351a4"
+    },
+    "time": 1759573543244,
+    "type": "Profiler (live)",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/mjzR5dgVKw"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "BackstageSam",
+      "uniqueId": "e8aa919a-fa63-48a1-a423-20b6f2e351a4"
+    },
+    "time": 1759410609313,
+    "type": "Profiler (live)",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/kZ5b0Iax9I"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "BackstageSam",
+      "uniqueId": "e8aa919a-fa63-48a1-a423-20b6f2e351a4"
+    },
+    "time": 1756062258363,
+    "type": "Profiler (live)",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/7ZJQXGsmvYP9"
+    }
+  }
+]

@@ -1,0 +1,250 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "immersive_aircrafts"
+	group: "51E865286B110947"
+	icon: "immersive_aircraft:gyrodyne"
+	id: "47C98B87746FF95A"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["311144CD75E939E4"]
+			description: [
+				"Exploring in minecraft has never been more fun. There is a variety of planes, each with their own functionality and benefits."
+				""
+				"There are also modifiers, which can adjust your plane and weapons you can add to them."
+			]
+			hide_dependent_lines: true
+			hide_until_deps_complete: true
+			id: "0378EB9C78203C1A"
+			tasks: [{
+				id: "7462B50533ED79C2"
+				title: "Aircrafts!"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0378EB9C78203C1A"]
+			description: ["Great for early game. This is powered by your hunger bar, all you need is enough food and you are ready to take off."]
+			id: "3B3A50A27341A0E7"
+			tasks: [{
+				id: "1EB1FEB55C2F9050"
+				item: "immersive_aircraft:gyrodyne"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0378EB9C78203C1A"]
+			description: [
+				"The best assistant for builders. This consumes fuel (such as coal or lava) and allows you to precisely manouver while building."
+				""
+				"When entering, you will automatically be set in third-person, but you can adjust it to be first person again."
+			]
+			id: "64B4572BA49761B8"
+			tasks: [{
+				id: "7A1BA0A00EC434D8"
+				item: "immersive_aircraft:quadrocopter"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0378EB9C78203C1A"]
+			description: ["More bulky than the gyrodyne. This requires fuel to work."]
+			id: "44126F58E3D92930"
+			tasks: [{
+				id: "5377FFA589050155"
+				item: "immersive_aircraft:airship"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0378EB9C78203C1A"]
+			description: ["Same as the other airship, except with more storage."]
+			id: "45E635C729F94719"
+			tasks: [{
+				id: "7E2C391EAD100305"
+				item: "immersive_aircraft:cargo_airship"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0378EB9C78203C1A"]
+			description: ["If you plan on fighting, this will be essential for you."]
+			id: "7C947C25A683E302"
+			tasks: [{
+				id: "45E7A37245369F7E"
+				item: "immersive_aircraft:warship"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["0378EB9C78203C1A"]
+			description: ["Best way to get around. Uses fuel."]
+			id: "7298FD33077BECF7"
+			tasks: [{
+				id: "7F17323748AAA8F1"
+				item: "immersive_aircraft:biplane"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["0378EB9C78203C1A"]
+			id: "0F4AB64DFB6F932E"
+			tasks: [{
+				id: "4E8AD01818F915C8"
+				item: "immersive_aircraft:eco_engine"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0378EB9C78203C1A"]
+			id: "705009295B23FA46"
+			tasks: [{
+				id: "46D045CB0559A210"
+				item: "immersive_aircraft:nether_engine"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0378EB9C78203C1A"]
+			id: "6EE1F59E7997D654"
+			tasks: [{
+				id: "61BEF4C7BECFB89D"
+				item: "immersive_aircraft:steel_boiler"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0378EB9C78203C1A"]
+			id: "1FCA5F9DAD9F798C"
+			tasks: [{
+				id: "3E06610A95728D9B"
+				item: "immersive_aircraft:industrial_gears"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0378EB9C78203C1A"]
+			id: "58157D672A4AF315"
+			tasks: [{
+				id: "4EDE773986A942BB"
+				item: "immersive_aircraft:sturdy_pipes"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0378EB9C78203C1A"]
+			id: "11DF3C40D3823E58"
+			tasks: [{
+				id: "61F474F9CAC76880"
+				item: "immersive_aircraft:gyroscope"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0378EB9C78203C1A"]
+			id: "32ED33C9F1F1284C"
+			tasks: [{
+				id: "30C39AB8224E4A1A"
+				item: "immersive_aircraft:enhanced_propeller"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["0378EB9C78203C1A"]
+			id: "1C108C00A4997AC4"
+			tasks: [{
+				id: "1AE159F49524E567"
+				item: "immersive_aircraft:hull_reinforcement"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["0378EB9C78203C1A"]
+			id: "2605F5EADFFD7988"
+			tasks: [{
+				id: "1FF4ADE7D3FD9922"
+				item: "immersive_aircraft:improved_landing_gear"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["0378EB9C78203C1A"]
+			id: "2C5EA7795CF37B08"
+			tasks: [{
+				id: "46F34121201DF6CE"
+				item: "immersive_aircraft:rotary_cannon"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0378EB9C78203C1A"]
+			id: "61D00B8B8589EE73"
+			tasks: [{
+				id: "53D0C07D51DDC85D"
+				item: "immersive_aircraft:heavy_crossbow"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0378EB9C78203C1A"]
+			id: "61BE23B5ECC0CCA8"
+			tasks: [{
+				id: "073193E5913CFE70"
+				item: "immersive_aircraft:telescope"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["0378EB9C78203C1A"]
+			id: "03CC2011EC3674CF"
+			tasks: [{
+				id: "29C4DD3BE4DFB351"
+				item: "immersive_aircraft:bomb_bay"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -2.5d
+		}
+	]
+	title: "Immersive Aircrafts"
+}

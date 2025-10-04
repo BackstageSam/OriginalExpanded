@@ -1,0 +1,90 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "toms_simple_storage"
+	group: "723BB032FE6A3B30"
+	icon: "toms_storage:ts.crafting_terminal"
+	id: "52E21972C68C5B75"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["02E992B2F64EF169"]
+			description: [
+				"Now that you have gone through the basics of Sophisticated Storage and Functional Storage, you can use Tom's simple storage to bring it all together."
+				""
+				"Tom's simple storage provides blocks to build an interface for your storage network. You can easily see all your items and craft with them!"
+			]
+			hide_until_deps_complete: true
+			id: "68B31FECBB73DAE6"
+			tasks: [{
+				id: "30F46EE750161EC1"
+				title: "Combining em all"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4FB1CE0CE418DFE6"]
+			description: ["You only need one, all adjacent inventories will be connected to each other as long as they are touching."]
+			id: "070B86BDF4E2DF3E"
+			tasks: [{
+				id: "2851A5142B5865AE"
+				item: "toms_storage:ts.inventory_connector"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["68B31FECBB73DAE6"]
+			description: ["The heart of your storage system. This is where you will be able to see all your items and craft."]
+			id: "4FB1CE0CE418DFE6"
+			tasks: [{
+				id: "369B24886271DFCD"
+				item: "toms_storage:ts.crafting_terminal"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4FB1CE0CE418DFE6"]
+			description: ["Prerequisite to the crafting terminal. This is mainly useful for vaults from Create."]
+			id: "72E3C337D97192BD"
+			tasks: [{
+				id: "2D8EF3F1672B37CF"
+				item: "toms_storage:ts.storage_terminal"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["070B86BDF4E2DF3E"]
+			description: ["Need a bit more reach? Use this to access your storage without having to go to the main access point."]
+			id: "3FF38C7BD8E89BDB"
+			tasks: [{
+				id: "1242F83E1580E94A"
+				item: "toms_storage:ts.wireless_terminal"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3FF38C7BD8E89BDB"]
+			description: ["Allows you to open your terminal from a large radius. If you want it to be across the entire overworld, build a beacon within 8 blocks range. Want it to be cross-dimensional? Build a level 4 beacon."]
+			id: "3EB1DED787442A8B"
+			tasks: [{
+				id: "042CEFD3696F2897"
+				item: "toms_storage:ts.adv_wireless_terminal"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 1.0d
+		}
+	]
+	title: "Tom's Simple Storage"
+}

@@ -1,0 +1,581 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "crops"
+	group: "4DC2EBA7AD3DB435"
+	icon: "farm_and_charm:onion"
+	id: "29280EDA7262DED2"
+	images: [
+		{
+			height: 1.0d
+			image: "minecraft:block/oak_sapling"
+			rotation: 0.0d
+			width: 1.0d
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			height: 1.0d
+			image: "vinery:item/apple_tree_sapling"
+			rotation: 0.0d
+			width: 1.0d
+			x: 1.0d
+			y: -1.0d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/oak_sapling"
+			rotation: 0.0d
+			width: 1.0d
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			height: 1.0d
+			image: "vinery:item/apple_tree_sapling"
+			rotation: 0.0d
+			width: 1.0d
+			x: 1.0d
+			y: 1.0d
+		}
+	]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["091A3378E9F29260"]
+			description: ["Farming has a lot more benefits than before, with way more crops that you can farm."]
+			hide_dependent_lines: true
+			hide_until_deps_complete: true
+			id: "02E746EEA185F193"
+			tasks: [{
+				id: "01AEA5C5AF1F5A7C"
+				title: "The variation"
+				type: "checkmark"
+			}]
+			title: "Crops, crops and more crops!"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["02E746EEA185F193"]
+			id: "57F58018366AC002"
+			tasks: [{
+				id: "3A77CBF394DCDBEA"
+				item: "minecraft:beef"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["02E746EEA185F193"]
+			id: "5184EAAA5102E42A"
+			tasks: [{
+				id: "3B289DC73E8B57F5"
+				item: "minecraft:porkchop"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["02E746EEA185F193"]
+			id: "6A75CF55E354F9BF"
+			tasks: [{
+				id: "44257FD1865D493A"
+				item: "minecraft:mutton"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["02E746EEA185F193"]
+			id: "761AB5299BBA69BA"
+			tasks: [{
+				id: "29E631748FF1780D"
+				item: "minecraft:chicken"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["02E746EEA185F193"]
+			id: "35DC5F864916494F"
+			tasks: [{
+				id: "288EDD5B223EF2D9"
+				item: "minecraft:rabbit"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["02E746EEA185F193"]
+			id: "03644B907E333E1B"
+			tasks: [{
+				id: "6A6D00D2815CC36D"
+				item: "meadow:raw_buffalo_meat"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["02E746EEA185F193"]
+			id: "4B4F4B7C9CE7AAF7"
+			tasks: [{
+				id: "0FBA3A9A3A069EAA"
+				item: "naturalist:duck"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["02E746EEA185F193"]
+			id: "764FA1B83D8EFCD5"
+			tasks: [{
+				id: "218F8A653992C960"
+				item: "minecraft:cod"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["02E746EEA185F193"]
+			id: "30346F9B699B8049"
+			tasks: [{
+				id: "5246D593F8B25468"
+				item: "minecraft:salmon"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["02E746EEA185F193"]
+			id: "419173039017FF3F"
+			tasks: [{
+				id: "707E49F8172C3B30"
+				item: "quark:crab_leg"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["02E746EEA185F193"]
+			id: "57C4439667A47142"
+			tasks: [{
+				id: "01D614E8EDEC576A"
+				item: "naturalist:catfish"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["02E746EEA185F193"]
+			id: "34C9879015C74092"
+			tasks: [{
+				id: "4C427A843F5EF9C6"
+				item: "naturalist:bass"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["02E746EEA185F193"]
+			id: "0EECDF924FB48F00"
+			tasks: [{
+				id: "006EF79516D2A08E"
+				item: "minecraft:egg"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["02E746EEA185F193"]
+			id: "06C8E4062A059BAA"
+			tasks: [{
+				id: "799D45993E5EF6EF"
+				item: "naturalist:duck_egg"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["02E746EEA185F193"]
+			id: "74823B3287608577"
+			tasks: [{
+				id: "17C5785AC60C8707"
+				item: "farm_and_charm:potato_bag"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["02E746EEA185F193"]
+			id: "06DE48E9AB56FED1"
+			tasks: [{
+				id: "266416279B114516"
+				item: "farm_and_charm:carrot_bag"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["02E746EEA185F193"]
+			id: "70F5FD98AFA4262E"
+			tasks: [{
+				id: "6C2698810DDEBC58"
+				item: "herbalbrews:tea_leaf_crate"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["02E746EEA185F193"]
+			id: "0E1D85059F871E4A"
+			tasks: [{
+				id: "15DE2619A3A20077"
+				item: "farm_and_charm:lettuce_bag"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["02E746EEA185F193"]
+			id: "43E7233C39260B70"
+			tasks: [{
+				id: "6D9A8886A8E5A97F"
+				item: "farm_and_charm:tomato_bag"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["02E746EEA185F193"]
+			id: "0DA5367D56F2F109"
+			tasks: [{
+				id: "71C642F22FBA5AB3"
+				item: "farm_and_charm:onion_bag"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["02E746EEA185F193"]
+			id: "4DDD79DF74200C7A"
+			tasks: [{
+				id: "480097B8E67CEA14"
+				item: "farm_and_charm:beetroot_bag"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["02E746EEA185F193"]
+			id: "1EEAF8CF3B3BAAF3"
+			tasks: [{
+				id: "65A224AF18F5B0E7"
+				item: "farm_and_charm:corn_bag"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["02E746EEA185F193"]
+			id: "74C314C604DC2424"
+			tasks: [{
+				id: "53FAF83D27A79914"
+				item: "farm_and_charm:strawberry_bag"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["02E746EEA185F193"]
+			id: "3B24E83EF4CB64E1"
+			tasks: [{
+				id: "2EB79D69952587CE"
+				item: "vinery:white_grape_bag"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["02E746EEA185F193"]
+			id: "316F187D0AB1C88F"
+			tasks: [{
+				id: "57059122F5B366B1"
+				item: "vinery:red_grape_bag"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["02E746EEA185F193"]
+			id: "2C983D7F141CFD1D"
+			tasks: [{
+				id: "420AE3753C645F04"
+				item: "vinery:cherry_bag"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["02E746EEA185F193"]
+			id: "6C4B716196A666F1"
+			tasks: [{
+				id: "51D883870C703BE7"
+				item: "vinery:apple_bag"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["02E746EEA185F193"]
+			id: "5B1AF906CDEC71E3"
+			tasks: [{
+				id: "27C73D61CC51B662"
+				item: "brewery:hops"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["02E746EEA185F193"]
+			id: "7CDAA3672CAB800B"
+			tasks: [{
+				id: "5B5741CDF58C36D5"
+				item: "farm_and_charm:oat_ball"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["02E746EEA185F193"]
+			id: "1EA95958C9298B9B"
+			tasks: [{
+				id: "6EA6817BA52CBE2F"
+				item: "farm_and_charm:barley_ball"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["02E746EEA185F193"]
+			id: "0D0E9D74512BC4EA"
+			tasks: [{
+				id: "5DA889672D7FEB64"
+				item: "minecraft:hay_block"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["02E746EEA185F193"]
+			description: [
+				"Feed your animals automatically!"
+				""
+				"This feeding trough only takes in seeds, and can be used to breed any animals in range."
+			]
+			id: "5DF21A9403CE34EE"
+			tasks: [{
+				id: "42142521F5522841"
+				item: "farm_and_charm:feeding_trough"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["02E746EEA185F193"]
+			description: ["Water your area in a larger area. Gives a small boost to crops."]
+			id: "2861E034C67423C5"
+			tasks: [{
+				id: "12CBCAF45BAC3A1F"
+				item: "farm_and_charm:water_sprinkler"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["02E746EEA185F193"]
+			description: ["Silo's have a lot of uses, most importantly for fertilizer."]
+			id: "03817F7C2DB53C13"
+			tasks: [{
+				id: "67A78895E3F3E9CF"
+				item: "farm_and_charm:silo_wood"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["03817F7C2DB53C13"]
+			description: ["Upgraded silo, speeds up the drying process."]
+			id: "030F964078E438F6"
+			tasks: [{
+				id: "73536EC069690CB8"
+				item: "farm_and_charm:silo_copper"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["02E746EEA185F193"]
+			id: "6D4D676D5193285C"
+			tasks: [{
+				id: "142DD0E8FA7049AE"
+				item: "quark:glowberry_sack"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["02E746EEA185F193"]
+			id: "2BD135D73BCF3001"
+			tasks: [{
+				id: "645EEEACDDD2FCB4"
+				item: "quark:cocoa_beans_sack"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["02E746EEA185F193"]
+			id: "7A3722DE9F3A9670"
+			tasks: [{
+				id: "6194FF91A07D208C"
+				item: "quark:berry_sack"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5B1AF906CDEC71E3"]
+			description: ["The gyrodyne looks very attractive after a few.."]
+			id: "6D99AC2D9CA7B611"
+			subtitle: "Feelin' a lil tipsy.."
+			tasks: [{
+				id: "626A2B1DD7443638"
+				item: "brewery:breathalyzer"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["02E746EEA185F193"]
+			description: ["The ol' basic composter."]
+			id: "1494FA3945A2BEAB"
+			tasks: [{
+				id: "2A5FAC51CB75EE2F"
+				item: "minecraft:composter"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["02E746EEA185F193"]
+			id: "2774B21236380D77"
+			tasks: [{
+				id: "73BE0E4E195109AB"
+				item: "minecraft:melon"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["02E746EEA185F193"]
+			id: "321695F06BC16AF1"
+			tasks: [{
+				id: "1A22EFFAF46E23A4"
+				item: "minecraft:pumpkin"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["02E746EEA185F193"]
+			id: "3E5B526E11B0EF29"
+			tasks: [{
+				id: "1C6DA500A2781A05"
+				item: "minecraft:kelp"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["030F964078E438F6"]
+			description: ["This will change your farm entirely, try placing 9 in a 3x3 crafting grid to get fertilized soil."]
+			id: "77CD2ED46D35CE0D"
+			tasks: [{
+				id: "3D4CD8665CD4E3DD"
+				item: "farm_and_charm:fertilizer"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["77CD2ED46D35CE0D"]
+			description: ["Occassionally bone meals your crops."]
+			id: "28144A07A569939C"
+			tasks: [{
+				id: "0F5701252C13811C"
+				item: "farm_and_charm:fertilized_soil"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["02E746EEA185F193"]
+			id: "63C27BAD7AC44627"
+			tasks: [{
+				id: "5AA1F4B2AB981CD6"
+				item: "snad:snad"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.0d
+		}
+	]
+	title: "Meat and crops"
+}

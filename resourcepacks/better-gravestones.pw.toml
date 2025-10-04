@@ -1,0 +1,13 @@
+name = "Better Gravestones"
+filename = "Better Gravestones.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/fxZT7oSW/versions/f95rtuZX/Better%20Gravestones.zip"
+hash-format = "sha512"
+hash = "ea30ce2376f6d1ecedd3aa97c58bfeeb8066b8c1a3444cda2ea5088ac1d12d27c2bcb00eb393837fb65ed92b5f2027758675089bf4c076f8d3b68f12cbd9fedc"
+
+[update]
+[update.modrinth]
+mod-id = "fxZT7oSW"
+version = "f95rtuZX"

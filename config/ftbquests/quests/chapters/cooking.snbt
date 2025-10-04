@@ -1,0 +1,444 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "cooking"
+	group: "4DC2EBA7AD3DB435"
+	icon: "farm_and_charm:stove"
+	id: "0D0FF25746A6E88D"
+	images: [
+		{
+			height: 1.0d
+			image: "minecraft:block/oak_sapling"
+			rotation: 0.0d
+			width: 1.0d
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			height: 1.0d
+			image: "biomesoplenty:block/flowering_oak_sapling"
+			rotation: 0.0d
+			width: 1.0d
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			height: 1.0d
+			image: "vinery:item/apple_tree_sapling"
+			rotation: 0.0d
+			width: 1.0d
+			x: 0.0d
+			y: 3.5d
+		}
+	]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["091A3378E9F29260"]
+			description: ["Just like there are new crops, there are even more new foods! Below is a list of handy workstations to help you out on your cooking journey."]
+			hide_dependent_lines: true
+			hide_until_deps_complete: true
+			id: "68F5AA3B7A1622BB"
+			tasks: [{
+				id: "3068D8A891D61801"
+				title: "Cooking equipment"
+				type: "checkmark"
+			}]
+			title: "Cookin' up a storm"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["68F5AA3B7A1622BB"]
+			description: ["The vanilla way to cook your foods."]
+			id: "38E4C98C55FF1AE9"
+			tasks: [{
+				id: "66B6FDD27C3F846E"
+				item: "minecraft:smoker"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["68F5AA3B7A1622BB"]
+			description: ["Doesn't cost any fuel.. But could we combine it with something to make it better?"]
+			id: "6AC0C300D03A8537"
+			tasks: [{
+				id: "0BA5076982E1BF07"
+				item: "minecraft:campfire"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["68F5AA3B7A1622BB"]
+			description: ["Place a campfire infront of an encased fan and power it. The air blown out from the fan will have the ability to bulk cook food."]
+			id: "41BB3AB5E8F66A22"
+			tasks: [{
+				id: "0CE40E7613AE17DF"
+				item: "create:encased_fan"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["68F5AA3B7A1622BB"]
+			id: "2223A190E8D900FE"
+			tasks: [{
+				id: "24612DD43EF6386E"
+				item: "farm_and_charm:stove"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["68F5AA3B7A1622BB"]
+			id: "7DB4E3B6BC2F4660"
+			tasks: [{
+				id: "7B8080BD6B874124"
+				item: "brewery:wooden_brewingstation"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["68F5AA3B7A1622BB"]
+			id: "2DD9E7CD3D5DE7AA"
+			tasks: [{
+				id: "7A69AE6D4DF19557"
+				item: "brewery:copper_brewingstation"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["68F5AA3B7A1622BB"]
+			id: "7A3CB36D3FA11D30"
+			tasks: [{
+				id: "3E27A2C8FC062DA6"
+				item: "brewery:netherite_brewingstation"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["68F5AA3B7A1622BB"]
+			id: "62E8CFE1C48F86C3"
+			tasks: [{
+				id: "091233D1955A6935"
+				item: "vinery:apple_press"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["68F5AA3B7A1622BB"]
+			id: "734C90CA377FA1DD"
+			tasks: [{
+				id: "6C5C3F852532E6C5"
+				item: "meadow:cooking_cauldron"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["68F5AA3B7A1622BB"]
+			id: "6E26212AF04C3B67"
+			tasks: [{
+				id: "40A48EC1AC8D8ABF"
+				item: "vinery:grapevine_pot"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["68F5AA3B7A1622BB"]
+			id: "798C2E6B64E336B2"
+			tasks: [{
+				id: "4737DC511EC50FD8"
+				item: "vinery:fermentation_barrel"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["68F5AA3B7A1622BB"]
+			id: "471F6ECA0C2A429A"
+			tasks: [{
+				id: "104846B5CD5F9648"
+				item: "bakery:baker_station"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["68F5AA3B7A1622BB"]
+			id: "4DD879C13EF0A7AF"
+			tasks: [{
+				id: "5DBA25D6AC66F29A"
+				item: "beachparty:mini_fridge"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["68F5AA3B7A1622BB"]
+			id: "78980C43ADA93A1E"
+			tasks: [{
+				id: "326C20DD9BB303B6"
+				item: "herbalbrews:tea_kettle"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["68F5AA3B7A1622BB"]
+			id: "5F6EB8EE2BB2DBC3"
+			tasks: [{
+				id: "4E46C10BD86D98AC"
+				item: "herbalbrews:copper_tea_kettle"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["68F5AA3B7A1622BB"]
+			id: "24E66B08F5472E32"
+			tasks: [{
+				id: "0B2E5E844614F148"
+				item: "herbalbrews:cauldron"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["68F5AA3B7A1622BB"]
+			id: "249A46E1D96B302F"
+			tasks: [{
+				id: "258AEBFF930356BF"
+				item: "meadow:cheese_form"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["68F5AA3B7A1622BB"]
+			id: "22FE9AEAD6A5EB8F"
+			tasks: [{
+				id: "402E34F9C33D522F"
+				item: {
+					Count: 1
+					id: "bakery:small_cooking_pot"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -1.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["68F5AA3B7A1622BB"]
+			id: "4422372769AE044B"
+			tasks: [{
+				id: "5730C67E5E266ED8"
+				item: {
+					Count: 1
+					id: "bakery:rolling_pin"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -1.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["68F5AA3B7A1622BB"]
+			id: "3B388016B3017A19"
+			tasks: [{
+				id: "753F65E144C5C1FA"
+				item: {
+					Count: 1
+					id: "bakery:bread_knife"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -1.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["68F5AA3B7A1622BB"]
+			id: "71AFEF586804142B"
+			tasks: [{
+				id: "278803E01DE851CF"
+				item: "farm_and_charm:crafting_bowl"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["68F5AA3B7A1622BB"]
+			id: "31953351A8AA93BD"
+			tasks: [{
+				id: "6407BF3AD8C55A59"
+				item: "farm_and_charm:mincer"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["68F5AA3B7A1622BB"]
+			id: "4290E10EFF8CF76B"
+			tasks: [{
+				id: "624FD75854B80346"
+				item: {
+					Count: 1
+					id: "candlelight:cooking_pan"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 1.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["68F5AA3B7A1622BB"]
+			id: "127ACB5F11727EB5"
+			tasks: [{
+				id: "6D5A96FCCC76B271"
+				item: "candlelight:cooking_pot"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["68F5AA3B7A1622BB"]
+			id: "73F3ABB4DD104D65"
+			tasks: [{
+				id: "2F1ECB882551AD55"
+				item: "farm_and_charm:cooking_pot"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["68F5AA3B7A1622BB"]
+			id: "327FA07E44DBCB04"
+			tasks: [{
+				id: "7B163811A20071BF"
+				item: "farm_and_charm:roaster"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["68F5AA3B7A1622BB"]
+			id: "4E4B70F81EEB864A"
+			tasks: [{
+				id: "4DFEE22445213DC7"
+				item: "vinery:vinery_standard"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["68F5AA3B7A1622BB"]
+			id: "3250F8DE563C73F6"
+			tasks: [{
+				id: "56C430477B98A6FF"
+				item: "herbalbrews:herbalbrews_banner"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["68F5AA3B7A1622BB"]
+			id: "15BAAD748CBEC7A0"
+			tasks: [{
+				id: "7A9B5C2CD30FB050"
+				item: "candlelight:candlelight_standard"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["68F5AA3B7A1622BB"]
+			id: "07E7EA2D1EC4CE9A"
+			tasks: [{
+				id: "44BD25D425809660"
+				item: "bakery:bakery_standard"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["68F5AA3B7A1622BB"]
+			id: "23A8AE70E5E1D9AD"
+			tasks: [{
+				id: "395C51FC5E75CBF0"
+				item: "meadow:meadow_banner"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["68F5AA3B7A1622BB"]
+			id: "15AC62008C478C74"
+			tasks: [{
+				id: "19266022C47A3520"
+				item: "brewery:beer_standard"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["68F5AA3B7A1622BB"]
+			id: "0306E0AA73680C13"
+			tasks: [{
+				id: "5829716AA5D4C086"
+				item: "lilis_lucky_lures:lilis_lucky_lures_banner"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.5d
+		}
+	]
+	title: "Cooking"
+}

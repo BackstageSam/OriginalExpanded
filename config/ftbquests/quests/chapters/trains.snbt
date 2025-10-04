@@ -1,0 +1,114 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "trains"
+	group: "51E865286B110947"
+	icon: "create:track"
+	id: "50487AB058917241"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["311144CD75E939E4"]
+			description: ["&6Dev note: This part still is not ready, for now hover over items and ponder.&r"]
+			hide_until_deps_complete: true
+			id: "4F7EF426FB728634"
+			tasks: [{
+				id: "36D82788345121B3"
+				title: "Trains"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4F7EF426FB728634"]
+			id: "786D91C7B96802FD"
+			tasks: [{
+				id: "753BA59E3BD0B83D"
+				item: "create:track"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4F7EF426FB728634"]
+			id: "377C8490CC516506"
+			tasks: [{
+				id: "2904B5DD700B0949"
+				item: "create:schedule"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["786D91C7B96802FD"]
+			id: "4ECAE46549E643F4"
+			tasks: [{
+				id: "0EBC7FEF98D53E39"
+				item: "create:railway_casing"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["786D91C7B96802FD"]
+			id: "63A3E1F1C605F831"
+			tasks: [{
+				id: "62FC1144CFC8D9A9"
+				item: "create:track_station"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["4F7EF426FB728634"]
+			id: "1E758E7D41A33C08"
+			tasks: [{
+				id: "52D0CEED4F8B0D7A"
+				item: "create:track_signal"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4F7EF426FB728634"]
+			id: "31D36F92C805B2A6"
+			tasks: [{
+				id: "47DBA1C4C7EADE2F"
+				item: "create:track_observer"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4F7EF426FB728634"]
+			id: "4E9820E74417FFE0"
+			tasks: [{
+				id: "260BBF25BE925889"
+				item: "create:controls"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4F7EF426FB728634"]
+			id: "3E03288555A4E726"
+			tasks: [{
+				id: "4733C1F70BB929F6"
+				item: "create:red_seat"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.0d
+		}
+	]
+	title: "Trains"
+}

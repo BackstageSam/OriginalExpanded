@@ -1,0 +1,324 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "functional_storage"
+	group: "723BB032FE6A3B30"
+	icon: "functionalstorage:storage_controller"
+	id: "05EFC61840439AA9"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["02E992B2F64EF169"]
+			description: ["Do you have a LOT of one single item and want a neat way to store it? Functional storage has got you covered."]
+			hide_until_deps_complete: true
+			id: "4085EAD6257F2BAE"
+			tasks: [{
+				id: "5BFDB00949CB2E46"
+				title: "Bulk storage!"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4085EAD6257F2BAE"]
+			description: [
+				"The classic 1x1 drawer. Can hold up till 2048 of a single item!"
+				""
+				"&2Tip: You can easily make drawers using a saw and some logs.&r"
+			]
+			id: "58871D243BFC3354"
+			tasks: [{
+				id: "04AEAB6346632CCE"
+				item: "functionalstorage:oak_1"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["58871D243BFC3354"]
+			description: ["The 1x2 drawer. Little less space, each compartment can hold 1024 of one item."]
+			id: "5FC22BC055AAC9CD"
+			tasks: [{
+				id: "23D8BD886084D255"
+				item: "functionalstorage:oak_2"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["58871D243BFC3354"]
+			description: ["The 1x2 drawer, each compartment can hold 512 of one item."]
+			id: "1939F4FFD895B1DF"
+			tasks: [{
+				id: "50B50E2F8291B9D6"
+				item: "functionalstorage:oak_4"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["262BEFD604585F6A"]
+			description: ["Great for fluid storage!"]
+			id: "6F23273D507D6022"
+			tasks: [{
+				id: "6219E5EC484ED258"
+				item: "functionalstorage:fluid_1"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6F23273D507D6022"]
+			id: "49D465E290FF18B1"
+			tasks: [{
+				id: "633EE0C499498A1E"
+				item: "functionalstorage:fluid_2"
+				type: "item"
+			}]
+			x: 10.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6F23273D507D6022"]
+			id: "2DF57B911132F10B"
+			tasks: [{
+				id: "6AE960C94C0D0982"
+				item: "functionalstorage:fluid_4"
+				type: "item"
+			}]
+			x: 11.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4FF6D0F88B07FE57"]
+			description: ["Perfect to store melons! You can put a lot of items in here if you want them to automatically be compressed."]
+			id: "262BEFD604585F6A"
+			tasks: [{
+				id: "4C5720E70E70CA2C"
+				item: "functionalstorage:simple_compacting_drawer"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["262BEFD604585F6A"]
+			description: ["The 3x compressor. Try putting some ingots here!"]
+			id: "551B76DDCAB0FF35"
+			tasks: [{
+				id: "3E4C021A8171AF53"
+				item: "functionalstorage:compacting_drawer"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4085EAD6257F2BAE"]
+			description: ["This will be the heart of your storage system. The base range of the controller is 8x8x8, but you can extend it using upgrades!"]
+			id: "746F5112E8CF339C"
+			tasks: [{
+				id: "6AA7A2BFC5DE5D62"
+				item: "functionalstorage:storage_controller"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["746F5112E8CF339C"]
+			description: ["As the name says, this is an excess point. It needs to be in range of the controller and allows you to interact with it as if it were the controller once you connect it using the linking tool."]
+			id: "37A6A2E34910AD6C"
+			tasks: [{
+				id: "2CA8135C945C4239"
+				item: "functionalstorage:controller_extension"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["262BEFD604585F6A"]
+			description: ["Want to change the look of your drawers? You can use this to make the drawer of your dreams."]
+			id: "67463381B4711E7F"
+			tasks: [{
+				id: "6D927849E40E5D4C"
+				item: "functionalstorage:framed_1"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["746F5112E8CF339C"]
+			description: ["The linking tool is essential to connect your drawers to the storage controller."]
+			id: "7C56F9DE58FBF278"
+			tasks: [{
+				id: "7FF271C443893785"
+				item: {
+					Count: 1
+					id: "functionalstorage:linking_tool"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["58871D243BFC3354"]
+			description: ["Do you hate it when you want to take a few stacks out of the drawer, and it immediately takes out everything? You can lock the drawer, meaning that even if there is 0 of the item in there, it will still reserve the drawer for that item!"]
+			id: "4FF6D0F88B07FE57"
+			tasks: [{
+				id: "0DDD059D10310402"
+				item: "functionalstorage:configuration_tool"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["58871D243BFC3354"]
+			description: ["Your basic upgrade. Essential for higher tiers."]
+			id: "000D548FF4B61B54"
+			tasks: [{
+				id: "3B1FFFBD63571AF2"
+				item: "functionalstorage:copper_upgrade"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["58871D243BFC3354"]
+			description: ["Getting a bit more fancy, huh?"]
+			id: "3CCD086098873219"
+			tasks: [{
+				id: "474E39536A9B3B54"
+				item: "functionalstorage:gold_upgrade"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["58871D243BFC3354"]
+			description: ["Now we're talking."]
+			id: "5F6ABF82757CD0CA"
+			tasks: [{
+				id: "31B4AD81AE5B25ED"
+				item: "functionalstorage:diamond_upgrade"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["58871D243BFC3354"]
+			description: ["You really had some netherite to spare, didn't ya?"]
+			id: "4DF8545175E6C599"
+			tasks: [{
+				id: "3409103A8530A554"
+				item: "functionalstorage:netherite_upgrade"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["4FF6D0F88B07FE57"]
+			description: ["Need your drawer to act as a to collect items? Use this!"]
+			id: "618048D9522E79D7"
+			tasks: [{
+				id: "6DFA881D09E17A90"
+				item: "functionalstorage:collector_upgrade"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4FF6D0F88B07FE57"]
+			description: ["Pulls items from an adjacent inventory."]
+			id: "46B732B40C123018"
+			tasks: [{
+				id: "747E07F489BC3C34"
+				item: "functionalstorage:puller_upgrade"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4FF6D0F88B07FE57"]
+			description: ["Pushes items to an adjacent inventory."]
+			id: "6D6C7DB19DBE606B"
+			tasks: [{
+				id: "34F7679E9B0ABA86"
+				item: "functionalstorage:pusher_upgrade"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4FF6D0F88B07FE57"]
+			description: ["Use this to prevent overflows. Any items that enter a drawer and exceed the drawer limit will instantly be voided."]
+			id: "6C7B4464608CC275"
+			tasks: [{
+				id: "610D263DA55F4EE2"
+				item: "functionalstorage:void_upgrade"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["262BEFD604585F6A"]
+			description: ["Got excess armor pieces? This is the ideal place to dump 'em."]
+			id: "32D3D7460E86C61B"
+			tasks: [{
+				id: "50D1AC969D8AA81E"
+				item: "functionalstorage:armory_cabinet"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4FF6D0F88B07FE57"]
+			description: ["Something something.. redstone..?"]
+			id: "68A1B33C1748B43F"
+			tasks: [{
+				id: "7169BEB58F0F0E1B"
+				item: {
+					Count: 1
+					id: "functionalstorage:redstone_upgrade"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 4.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["262BEFD604585F6A"]
+			description: ["A drawer, just for you."]
+			id: "6089848E5054C421"
+			tasks: [{
+				id: "700DC7E9D5422107"
+				item: "functionalstorage:ender_drawer"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 1.5d
+		}
+	]
+	title: "Functional Storage"
+}

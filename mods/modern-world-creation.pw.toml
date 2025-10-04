@@ -1,0 +1,13 @@
+name = "Modern World Creation"
+filename = "modernworldcreation_forge_2.0.2_MC_1.20.1.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/xHskr2cS/versions/3EAmx5Pn/modernworldcreation_forge_2.0.2_MC_1.20.1.jar"
+hash-format = "sha512"
+hash = "98c0cda29008da77447f83934631f9af3095a3e04eea985e21510e1727cca5b19e729c369a91932730743daa23174dbb6f9ec44e684d9d29c13a541343ff6341"
+
+[update]
+[update.modrinth]
+mod-id = "xHskr2cS"
+version = "3EAmx5Pn"

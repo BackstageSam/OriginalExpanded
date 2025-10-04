@@ -1,0 +1,74 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "decoration"
+	group: "653E42BC2F60695E"
+	icon: "furniture:sofa_red"
+	id: "4238FD2284F1FE34"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["0AA60CD053E1DBBB"]
+			description: ["Looking to spice up your base? Check out these mods!"]
+			hide_until_deps_complete: true
+			id: "5375C4F5B1FA43FA"
+			tasks: [{
+				id: "5B2F077D76FF8728"
+				title: "Deco"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5375C4F5B1FA43FA"]
+			description: ["The saw allows you to easily craft a bunch of items, skipping the tedious process. Essential tool for builders."]
+			id: "2940AFCF29C7B1B1"
+			tasks: [{
+				id: "730F5434B630C1F3"
+				item: "sawmill:sawmill"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5375C4F5B1FA43FA"]
+			description: ["With stoneworks, there are a lot of different texture variants to stone materials."]
+			id: "1915FC710563BF2E"
+			tasks: [{
+				id: "2D5A9E2B8CFD0ED6"
+				item: "minecraft:stonecutter"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5375C4F5B1FA43FA"]
+			description: ["Handcrafted is an extensive mod focusing on furniture, make your base feel more alive!"]
+			id: "1138AFF61E3EB462"
+			tasks: [{
+				id: "24DF8FC13F26C1C8"
+				item: "handcrafted:hammer"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5375C4F5B1FA43FA"]
+			description: ["The [Let's Do] mods have beautiful decorational items to fill up your minecraft world."]
+			id: "2C2DAC4354F3BD97"
+			tasks: [{
+				id: "6404068A3E6A2B32"
+				item: "furniture:sofa_red"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -1.0d
+		}
+	]
+	title: "Decoration"
+}

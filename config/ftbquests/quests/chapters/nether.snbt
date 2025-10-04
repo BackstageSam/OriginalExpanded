@@ -1,0 +1,49 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "nether"
+	group: "51E865286B110947"
+	icon: "minecraft:obsidian"
+	id: "1D7E4DBCB4ABB840"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["311144CD75E939E4"]
+			description: ["The nether has new structures and new biomes to explore. Not much to explain, check it out!"]
+			hide_until_deps_complete: true
+			id: "599D5C67B268C18E"
+			tasks: [{
+				id: "19A3B8E5F930EAB8"
+				title: "Nether"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["599D5C67B268C18E"]
+			description: [
+				"Piglins now have a reputation system. Giving them gifts or trading with them will increase your reputation. Hurting or killing them will decrease your reputation. If you shift-right click a piglin with an empty hand you will receive a chat message to see your status."
+				""
+				"-100: Piglins attack you on sight"
+				"-50: Piglins won't barter with you"
+				"0: Piglins act normal"
+				"50: You no longer need to wear gold armor around them"
+				"100: You can mine gold and open chests around them."
+				""
+				"There are a lot more features, try experimenting!"
+			]
+			icon: "minecraft:piglin_head"
+			id: "553C737680F705B5"
+			tasks: [{
+				id: "18CD8565B89F917B"
+				title: "Piglins"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+	]
+	title: "The Nether"
+}

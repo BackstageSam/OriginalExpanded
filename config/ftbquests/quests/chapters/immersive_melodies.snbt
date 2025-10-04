@@ -1,0 +1,170 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "immersive_melodies"
+	group: "653E42BC2F60695E"
+	icon: "beachparty:radio"
+	id: "39783F2149FAEF71"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["0AA60CD053E1DBBB"]
+			description: ["Want to play custom music? The instruments from Immersive Melodies can play custom music, as long as they are MIDI or ABC files."]
+			hide_until_deps_complete: true
+			id: "35F627A17F67A513"
+			tasks: [{
+				id: "0551879FB380215B"
+				title: "Music"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["35F627A17F67A513"]
+			description: ["Allows you to play music discs on repeat."]
+			id: "7239D6B975896603"
+			tasks: [{
+				id: "492CD0B70FB016A2"
+				item: "furniture:gramophone"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["35F627A17F67A513"]
+			description: ["For some relaxing beach tunes."]
+			id: "19BABFB1831DA080"
+			tasks: [{
+				id: "2778337AC2205F91"
+				item: "beachparty:radio"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["35F627A17F67A513"]
+			id: "0E70013EA5B36949"
+			tasks: [{
+				id: "577955CABF128981"
+				item: {
+					Count: 1
+					id: "immersive_melodies:bagpipe"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["35F627A17F67A513"]
+			id: "040F26947087F5EE"
+			tasks: [{
+				id: "47731FFC1C703A16"
+				item: {
+					Count: 1
+					id: "immersive_melodies:didgeridoo"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["35F627A17F67A513"]
+			id: "1ED0817C4A42C4D0"
+			tasks: [{
+				id: "5361838C04D70AF9"
+				item: {
+					Count: 1
+					id: "immersive_melodies:flute"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["35F627A17F67A513"]
+			id: "13A09966175B2B1D"
+			tasks: [{
+				id: "7E48C1E31FB5F62D"
+				item: {
+					Count: 1
+					id: "immersive_melodies:lute"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["35F627A17F67A513"]
+			id: "170D8F0382D9D072"
+			tasks: [{
+				id: "3A33B1C15F122609"
+				item: {
+					Count: 1
+					id: "immersive_melodies:piano"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["35F627A17F67A513"]
+			id: "31D5D2C38D7D967B"
+			tasks: [{
+				id: "1C0F88D5C12451B1"
+				item: {
+					Count: 1
+					id: "immersive_melodies:triangle"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["35F627A17F67A513"]
+			id: "334873F5E56B4552"
+			tasks: [{
+				id: "094915A33F4B5F32"
+				item: {
+					Count: 1
+					id: "immersive_melodies:trumpet"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["35F627A17F67A513"]
+			id: "1745AC009AA050D9"
+			tasks: [{
+				id: "02DC23CB1BDB5151"
+				item: {
+					Count: 1
+					id: "immersive_melodies:tiny_drum"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+	]
+	title: "Custom Music"
+}

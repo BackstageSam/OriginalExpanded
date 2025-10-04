@@ -1,0 +1,315 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "welcome"
+	group: ""
+	icon: "minecraft:player_head"
+	id: "716852817A6D127F"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Welcome to Original Expanded!"
+				""
+				"Do you hate dropping in a world and feeling entirely lost? Having to tab out and skim read through outdated documents? This questbook aims to tackle that issue."
+				""
+				"All the quests are entirely optional and only serve as a crutch to help you on your way to build your dream forever-world!"
+				""
+				"Even as a veteran, you can learn some tips and tricks scattered in the various questlogs."
+			]
+			icon: "minecraft:oak_sapling"
+			id: "6A08319E842F33F8"
+			shape: "gear"
+			size: 2.0d
+			subtitle: "A New Dawn"
+			tasks: [{
+				dimension: "minecraft:overworld"
+				id: "5C4B6C1AACDEB4AB"
+				type: "dimension"
+			}]
+			title: "The journey begins"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Silent Gear gives a simple way to customize your gear and progress."
+				""
+				"This is both for your armor and your tools."
+				""
+				"Tip: you can convert vanilla armor / tools into Silent Gear items by putting them in a crafting grid."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:stone_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "0881CD63EA704FC2"
+			shape: "square"
+			tasks: [{
+				id: "348EC637AEDF7B01"
+				title: "Gear"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"This modpack adds a lot of new items, and sorting them can feel overwhelming. This is why there is a tab dedicated to storage tech to help you get started in building your storage area."
+				""
+				"Tip: make a backpack for early game!"
+			]
+			icon: "minecraft:chest"
+			id: "02E992B2F64EF169"
+			shape: "square"
+			size: 1.0d
+			tasks: [{
+				id: "70FBD0D087CD3C7D"
+				title: "Storage"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: 2.0d
+		}
+		{
+			description: ["Travelling is important, there are many structures and dungeons scattered all around the world. You can find some amazing loot, but you need some decent way to get there, and also get back."]
+			icon: "waystones:waystone"
+			id: "311144CD75E939E4"
+			tasks: [{
+				id: "7987050DBE5FF615"
+				title: "Travelling"
+				type: "checkmark"
+			}]
+			title: "Exploration"
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			description: ["There are a lot of new crops you can farm, alongside a ton of new dishes you can make with some of them having special effects!"]
+			icon: "farm_and_charm:onion"
+			id: "091A3378E9F29260"
+			tasks: [{
+				id: "11957D9087798506"
+				title: "Farming"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: 4.0d
+		}
+		{
+			description: ["Create offers a lot of variety when it comes to automation! From basic smelting tasks, to even train stations!"]
+			icon: "create:cogwheel"
+			id: "1CD6AA5B661C7CCC"
+			shape: "square"
+			tasks: [{
+				id: "5F91589EF39F57DE"
+				title: "Automation"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: 2.0d
+		}
+		{
+			description: ["The Misc tab is for all the mods that fall out of the rest of the categories. They mainly focus on decoration and entertainment!"]
+			icon: "handcrafted:spruce_fancy_bed"
+			id: "0AA60CD053E1DBBB"
+			tasks: [{
+				id: "6E4272C8A4384C71"
+				title: "Misc"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			description: ["Original Expanded has many QOL changes for multiplayer servers, such as one player sleep, and a few other tweaks."]
+			icon: "minecraft:player_head"
+			id: "347072EB5F2C4460"
+			shape: "rsquare"
+			tasks: [{
+				id: "25FA5EA7239D7756"
+				title: "Voice chat"
+				type: "checkmark"
+			}]
+			title: "Multiplayer Integration"
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			description: ["There is built in proximity voice chat in this modpack. If you want to try it out, press V!"]
+			icon: "furniture:gramophone"
+			id: "748C08048C57820A"
+			shape: "rsquare"
+			tasks: [{
+				id: "6D5DADC74B711510"
+				title: "Proximity Voice Chat"
+				type: "checkmark"
+			}]
+			x: -4.0d
+			y: 1.5d
+		}
+		{
+			description: ["Shoppy has been removed for the preparation of Create 6.0, sorry for the inconvinience."]
+			id: "5E51ACD209AEE01D"
+			shape: "rsquare"
+			tasks: [{
+				id: "7C64BA888E2E2642"
+				title: "Check"
+				type: "checkmark"
+			}]
+			title: "Shoppy!"
+			x: -4.0d
+			y: 3.0d
+		}
+		{
+			description: [
+				"One pet-peeve of mine is that modpacks rarely have presets ready to go for players to play the game. This modpack has already a basic set of keybinds, which you can still change to your liking whenever you'd like!"
+				""
+				"- W, used to zoom"
+				"- X, enlarge your minimap"
+				"- C, Tom's wireless crafting grid (if you have made one)"
+				"- V, voice chat settings"
+				"- B, backpack"
+				"- N, open the sails of your ship"
+			]
+			icon: "candlelight:typewriter_iron"
+			id: "3F80F3609B04AFFB"
+			shape: "rsquare"
+			tasks: [{
+				id: "7A27F6778BEA3C6E"
+				title: "Helpful keybinds"
+				type: "checkmark"
+			}]
+			title: "Helpful Keybinds"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			description: ["If you enjoy playing this modpack, consider leaving a positive comment or invite your friends to play!"]
+			icon: "candlelight:hearth"
+			id: "08B1BD2634068598"
+			shape: "rsquare"
+			tasks: [{
+				id: "6436C3E8D9F43DB9"
+				title: "Thank you for playing!"
+				type: "checkmark"
+			}]
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			description: [
+				"When playing with others, don't break yellow-gilded chests! Other player can open them up for loot as well."
+				""
+				"{image:lootr:textures/logo.png width:100 height:100 align:center}"
+			]
+			icon: "lootr:trophy"
+			id: "0ADC2B28BA7CD066"
+			shape: "rsquare"
+			tasks: [{
+				id: "49343788DC228843"
+				title: "Lootr"
+				type: "checkmark"
+			}]
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["091A3378E9F29260"]
+			description: [
+				"You get a bonus for eating a variety of foods. For every 10 unique dishes that hit the minimum food value, you gain bonus hearts. "
+				""
+				"This can be done up until 10 times."
+			]
+			hide_until_deps_complete: true
+			id: "53958A09F2333FED"
+			size: 0.75d
+			tasks: [{
+				id: "34B72236C35B8D99"
+				item: "solcarrot:food_book"
+				type: "item"
+			}]
+			x: -2.625d
+			y: 4.875d
+		}
+		{
+			dependencies: ["311144CD75E939E4"]
+			description: [
+				"Horses are way more useful now. Did you know you can call them anywhere you are? Keybinds:"
+				""
+				"- O: Set your personal horse"
+				"- I: Call your horse"
+				""
+				"Take care of your horse, because if they die they cannot respawn."
+			]
+			hide_until_deps_complete: true
+			id: "77F8A40251E7E504"
+			size: 0.75d
+			tasks: [{
+				id: "12B498D11159BC8C"
+				item: "minecraft:saddle"
+				type: "item"
+			}]
+			x: 2.625d
+			y: 4.875d
+		}
+		{
+			description: [
+				"Want to chunkload parts of your base? Open the chunk claim manager (underneath the questbook when you open your inventory), and claim the chunks you want. Only you can build in claimed chunks, others need to be part of your team."
+				""
+				"Then shift click the chunks you want to forceload. Diagonal stripes will show ontop of the claimed chunks."
+				""
+				"To create a team, make a party in the \"My Team\" tab located next to your questbook when you open your inventory."
+			]
+			icon: "ftbquests:barrier"
+			id: "5C0FED8E11BAC78E"
+			shape: "rsquare"
+			tasks: [{
+				id: "008D07C71B3C71EF"
+				title: "Chunk loading"
+				type: "checkmark"
+			}]
+			x: -4.0d
+			y: 4.5d
+		}
+		{
+			description: [
+				"The JEI searchbar will be your best friend during this survival. It appears when you open your inventory. It will tell you a lot of handy info about all the items."
+				""
+				"If you left click on an item it will tell you how to make it. Right clicking will tell you what you can make with it. If nothing happens that means it cannot be crafted or does not have any further recipes."
+			]
+			icon: "minecraft:spyglass"
+			id: "2D2C4A3359A91A87"
+			shape: "rsquare"
+			tasks: [{
+				id: "66B1AF1BA05C58AA"
+				title: "JEI searchbar"
+				type: "checkmark"
+			}]
+			x: 4.0d
+			y: 4.5d
+		}
+		{
+			description: [
+				"The current questbook is outdated and will need a rework, sorry for the inconvinience!"
+				""
+				"Although it is defintely still usuable."
+			]
+			id: "65DA52515E390816"
+			shape: "octagon"
+			size: 3.0d
+			tasks: [{
+				id: "7BF089E743E35553"
+				title: "READ ME"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -2.5d
+		}
+	]
+	title: "Introduction"
+}

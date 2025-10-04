@@ -1,0 +1,13 @@
+name = "Original Expanded"
+author = "BackstageSam"
+version = "2.0"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "675ff54c735feddfdc1b5b43bb6bc4940f105110f9f5b433f938b04ee7ee9cf7"
+
+[versions]
+forge = "47.4.9"
+minecraft = "1.20.1"

@@ -1,0 +1,245 @@
+
+#Disables certain types. Note that all these configs, like in any other mod, only hide stuff from tabs and disable their recipes
+[types]
+
+	[types.wood_type]
+
+		[types.wood_type.quark]
+			azalea = true
+			ancient = true
+			blossom = true
+
+		[types.wood_type.silentgear]
+			netherwood = true
+
+		[types.wood_type.betterarcheology]
+			rotten = true
+
+		[types.wood_type.vinery]
+			dark_cherry = true
+
+		[types.wood_type.beachparty]
+			palm = true
+
+		[types.wood_type.meadow]
+			pine = true
+
+		[types.wood_type.biomesoplenty]
+			fir = true
+			redwood = true
+			mahogany = true
+			jacaranda = true
+			palm = true
+			willow = true
+			dead = true
+			magic = true
+			umbran = true
+			hellbark = true
+
+		[types.wood_type.bloomingnature]
+			larch = true
+			baobab = true
+			swamp_oak = true
+			aspen = true
+			fan_palm = true
+			fir = true
+			swamp_cypress = true
+			ebony = true
+			chestnut = true
+
+		[types.wood_type.architects_palette]
+			twisted = true
+
+		[types.wood_type.cataclysm]
+			chorus = true
+
+	[types.leaves_type]
+
+		[types.leaves_type.silentgear]
+			netherwood = true
+
+		[types.leaves_type.quark]
+			ancient = true
+			blue_blossom = true
+			lavender_blossom = true
+			orange_blossom = true
+			yellow_blossom = true
+			red_blossom = true
+
+		[types.leaves_type.vinery]
+			grapevine = true
+			dark_cherry = true
+			apple = true
+
+		[types.leaves_type.beachparty]
+			palm = true
+
+		[types.leaves_type.meadow]
+			pine = true
+
+		[types.leaves_type.biomesoplenty]
+			origin = true
+			flowering_oak = true
+			rainbow_birch = true
+			snowblossom = true
+			yellow_autumn = true
+			orange_autumn = true
+			maple = true
+			fir = true
+			redwood = true
+			mahogany = true
+			jacaranda = true
+			palm = true
+			willow = true
+			dead = true
+			magic = true
+			umbran = true
+			hellbark = true
+
+		[types.leaves_type.bloomingnature]
+			larch = true
+			baobab = true
+			orange = true
+			swamp_oak = true
+			aspen = true
+			fan_palm = true
+			fir = true
+			swamp_cypress = true
+			ebony = true
+			chestnut = true
+
+		[types.leaves_type.rediscovered]
+			ancient_cherry = true
+
+		[types.leaves_type.architects_palette]
+			twisted = true
+
+#Disables specific entries
+[entries]
+
+	[entries.wood_type]
+
+		[entries.wood_type.functionalstorage]
+			1 = true
+			4 = true
+			2 = true
+
+		[entries.wood_type.mcwdoors]
+			beach_door = true
+			nether_door = true
+			stable_head_door = true
+			barn_door = true
+			mystic_door = true
+			japanese2_door = true
+			waffle_door = true
+			tropical_door = true
+			barn_glass_door = true
+			cottage_door = true
+			four_panel_door = true
+			japanese_door = true
+			western_door = true
+			bark_glass_door = true
+			paper_door = true
+			classic_door = true
+			bamboo_door = true
+			swamp_door = true
+			glass_door = true
+			stable_door = true
+			modern_door = true
+
+		[entries.wood_type.mcwfences]
+			horse_fence = true
+			highley_gate = true
+			pyramid_gate = true
+			stockade_fence = true
+			wired_fence = true
+			picket_fence = true
+
+		[entries.wood_type.create]
+			window = true
+			window_pane = true
+
+		[entries.wood_type.quark]
+			hollow_log = true
+			vertical_planks = true
+			post = true
+			trapped_chest = true
+			bookshelf = true
+			chest = true
+			stripped_post = true
+			ladder = true
+			vertical_slab = true
+
+		[entries.wood_type.handcrafted]
+			counter = true
+			corner_trim = true
+			fancy_bed = true
+			desk = true
+			shelf = true
+			cupboard = true
+			dining_bench = true
+			bench = true
+			drawer = true
+			pillar_trim = true
+			side_table = true
+			nightstand = true
+			couch = true
+			table = true
+			chair = true
+
+		[entries.wood_type.mighty_mail]
+			mail_box = true
+
+		[entries.wood_type.rediscovered]
+			table = true
+			chair = true
+
+		[entries.wood_type.architects_palette]
+			board_stairs = true
+			railing = true
+			boards = true
+			board_slab = true
+			board_wall = true
+
+		[entries.wood_type.bbb]
+			trim = true
+			ladder = true
+			support = true
+			pallet = true
+			frame = true
+			layer = true
+			wall = true
+			beam_stairs = true
+			beam_slab = true
+			lantern = true
+			beam = true
+
+		[entries.wood_type.farmersdelight]
+			cabinet = true
+
+		[entries.wood_type.mcwbridges]
+			bridge_pier = true
+			rope_bridge_stair = true
+			log_bridge_stair = true
+			rail_bridge = true
+			rope_bridge = true
+			log_bridge_middle = true
+
+		[entries.wood_type.infinitybuttons]
+			large_button = true
+			plank_secret_button = true
+
+		[entries.wood_type.table_top_craft]
+			chess_timer = true
+			connect_four = true
+			chess = true
+
+	[entries.leaves_type]
+
+		[entries.leaves_type.quark]
+			hedge = true
+			leaf_carpet = true
+
+		[entries.leaves_type.mcwfences]
+			hedge = true
+

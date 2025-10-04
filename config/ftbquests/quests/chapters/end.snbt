@@ -1,0 +1,335 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "end"
+	group: "51E865286B110947"
+	icon: "minecraft:end_portal_frame"
+	id: "53213390430A4414"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["311144CD75E939E4"]
+			description: [
+				"The end has been overhauled too. It seems like getting to the end isn't as easy as it used to be. To open the end portal, you need to collect different ender eyes which can be found while exploring or doing killing mobs. While there are more than 12 eyes, you only need 12 to open the end portal."
+				""
+				"Some are easier to obtain, others are way more difficult."
+			]
+			hide_dependent_lines: true
+			hide_until_deps_complete: true
+			icon: "minecraft:end_portal_frame"
+			id: "3404CCAEB58D7BE5"
+			size: 1.25d
+			tasks: [{
+				id: "362424209C94E542"
+				title: "End"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3404CCAEB58D7BE5"]
+			id: "6297EDB12D333111"
+			tasks: [{
+				id: "0035D7E03F3C09E1"
+				item: {
+					Count: 1
+					id: "endrem:black_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3404CCAEB58D7BE5"]
+			id: "4D7590DA974FC435"
+			tasks: [{
+				id: "69342858717B0D91"
+				item: {
+					Count: 1
+					id: "endrem:cold_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["3404CCAEB58D7BE5"]
+			id: "7974DB4D53F9B7A2"
+			tasks: [{
+				id: "70F3E547FB11DE0E"
+				item: {
+					Count: 1
+					id: "endrem:corrupted_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3404CCAEB58D7BE5"]
+			id: "0141584785B8F254"
+			tasks: [{
+				id: "398E3CDAFA56EECD"
+				item: {
+					Count: 1
+					id: "endrem:lost_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3404CCAEB58D7BE5"]
+			id: "3E45B096601EC5EF"
+			tasks: [{
+				id: "0F2FE9083367E5CE"
+				item: {
+					Count: 1
+					id: "endrem:nether_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["3404CCAEB58D7BE5"]
+			id: "4344B5FD996ED342"
+			tasks: [{
+				id: "5A0239D2931E2127"
+				item: {
+					Count: 1
+					id: "endrem:old_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3404CCAEB58D7BE5"]
+			id: "784D9A10D54A71D9"
+			tasks: [{
+				id: "433BDFAAB40EDD17"
+				item: {
+					Count: 1
+					id: "endrem:rogue_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3404CCAEB58D7BE5"]
+			id: "359EF86263DDE2BC"
+			tasks: [{
+				id: "02C4CDDC60BA5B41"
+				item: {
+					Count: 1
+					id: "endrem:cursed_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["3404CCAEB58D7BE5"]
+			id: "140E49D2C3CF75E3"
+			tasks: [{
+				id: "10B38C5315355675"
+				item: {
+					Count: 1
+					id: "endrem:evil_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3404CCAEB58D7BE5"]
+			id: "45A99B87FD37CA26"
+			tasks: [{
+				id: "6A4D317002E34E9E"
+				item: {
+					Count: 1
+					id: "endrem:guardian_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3404CCAEB58D7BE5"]
+			id: "1EB96304F7375759"
+			tasks: [{
+				id: "4FD1E760A07362DD"
+				item: {
+					Count: 1
+					id: "endrem:magical_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3404CCAEB58D7BE5"]
+			id: "1CA4CBBCC925F104"
+			tasks: [{
+				id: "70EDB04F25B9B807"
+				item: {
+					Count: 1
+					id: "endrem:wither_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3404CCAEB58D7BE5"]
+			id: "5AEF8ECB5B621BA3"
+			tasks: [{
+				id: "153C62448289A69C"
+				item: {
+					Count: 1
+					id: "endrem:witch_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3404CCAEB58D7BE5"]
+			id: "2781B7FE1C0D9D82"
+			tasks: [{
+				id: "51AA100D99B02534"
+				item: {
+					Count: 1
+					id: "endrem:undead_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3404CCAEB58D7BE5"]
+			id: "52D3AA37636E5E5A"
+			tasks: [{
+				id: "78A3F93968029908"
+				item: {
+					Count: 1
+					id: "endrem:exotic_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3404CCAEB58D7BE5"]
+			id: "2DB4B47E0B87A4ED"
+			tasks: [{
+				id: "429B8F2DE72F7CCB"
+				item: {
+					Count: 1
+					id: "endrem:cryptic_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -1.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3404CCAEB58D7BE5"]
+			description: ["The end island and the enderdragon has completely been overhauled to give you an entirely different boss fight. No spoilers, but it is way more difficult than before so make sure you gear up properly before you go to the end."]
+			icon: "minecraft:dragon_head"
+			id: "607B98BB3B619174"
+			tasks: [{
+				id: "4B7DAE2020FD1B77"
+				title: "Enderdragon"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3404CCAEB58D7BE5"]
+			description: [
+				"The terrain of the end has been completely overhauled. The design of the terrain encourages using ender pearls to get around, but there are alternatives you can use."
+				""
+				"&2Tip: End cities spawn more often in the end midlands and end highlands biomes.&r"
+			]
+			icon: "minecraft:shulker_shell"
+			id: "3DC6D2DC591253C8"
+			tasks: [{
+				id: "6E6F1672889CEE98"
+				title: "End cities"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+	]
+	title: "The End"
+}

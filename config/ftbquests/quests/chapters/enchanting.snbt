@@ -1,0 +1,158 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "enchanting"
+	group: "5DD9D23F04DE3000"
+	hide_quest_until_deps_complete: true
+	icon: "minecraft:enchanting_table"
+	id: "41CFA53A8C6EC11D"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["0881CD63EA704FC2"]
+			description: ["You can't just let your gear be basic, can you now? Enchant your gear to be even more powerful!"]
+			id: "4001812E6EF250BD"
+			tasks: [{
+				id: "3BEB3C9281B18CC6"
+				title: "Enchanting"
+				type: "checkmark"
+			}]
+			title: "Feelin' enchanted"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["66C8FE6961C14C60"]
+			description: [
+				"Disenchants items, and allows you to store the XP in liquid form."
+				""
+				"To take it out, you need to use a pump and direct it to a fluid tank. If the pipe isn't connected and open, it will drop XP orbs on the ground."
+				""
+				"&2Tip: you can stand on the Disenchanter to store your levels!&r"
+			]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "7F121EA1C7A5740C"
+			tasks: [{
+				id: "1F727CCFFEBF59B8"
+				item: "create_enchantment_industry:disenchanter"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["66C8FE6961C14C60"]
+			description: [
+				"The printer allows you to copy enchanted books, books with text in them or nametags!"
+				""
+				"Enchanted books will cost liquid XP."
+			]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "703A1B60F19A88BB"
+			tasks: [{
+				id: "5C81971C92C7F7F4"
+				item: "create_enchantment_industry:printer"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4001812E6EF250BD"]
+			description: [
+				"You can automate enchanting with Create! Also there is a way to get higher enchanting levels than usual..."
+				""
+				"If you get stuck, ponder any item involved with Create: Enchantment industries! "
+				""
+				"&2Tip: try giving this guide to a blaze inside a blaze burner.&r"
+			]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "66C8FE6961C14C60"
+			tasks: [{
+				id: "4B910274054D02DB"
+				item: "create_enchantment_industry:enchanting_guide"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["703A1B60F19A88BB"]
+			description: ["This is used to print normal books!"]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "348826DF2845F11C"
+			tasks: [{
+				id: "33F18F2F1273B544"
+				item: "create_enchantment_industry:ink_bucket"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["66C8FE6961C14C60"]
+			description: [
+				"Got too many resources and time? Want to overlevel your gear? With HyperXP you can gain an extra level on the enchantments of your gear!"
+				""
+				"Use the ponder button to check how to use it."
+				""
+				"In order to make hyper experience you will need to combine glow ink sacks, lapis and liquid XP in a basin."
+				""
+				"&2Tip: you can easily make glow ink sacks by haunting them using a fan and a haunted campfire.&r"
+			]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "3ABF416E84482A76"
+			tasks: [{
+				id: "156608B02986AC01"
+				item: "create_enchantment_industry:hyper_experience_bottle"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["0CC71A89042E9685"]
+			description: [
+				"Enchantment tables have a few QOL improvements."
+				"- Both lapis and your to-be-enchanted item stay inside the table."
+				"- Reroll currently offered enchants!"
+			]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "17FC5EF83BC8749F"
+			tasks: [{
+				id: "2CA2909730DEB54C"
+				item: "minecraft:enchanting_table"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4001812E6EF250BD"]
+			description: [
+				"Anvils have a lot of changes too!"
+				"- XP costs scale less aggressively when an item has been worked on many times"
+				"- Need to repair your anvil? One iron block will make it go back up a stage"
+				"- Renaming nametags doesn't cost any levels and doesn't damage the anvil"
+			]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "0CC71A89042E9685"
+			tasks: [{
+				id: "538FE77DB2380368"
+				item: "minecraft:anvil"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+	]
+	title: "Enchanting"
+}

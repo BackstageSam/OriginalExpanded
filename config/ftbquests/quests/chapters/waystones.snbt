@@ -1,0 +1,62 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "waystones"
+	group: "51E865286B110947"
+	icon: "waystones:waystone"
+	id: "06778C015B556445"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["311144CD75E939E4"]
+			description: ["Waystone are an easy way to teleport around your world. There are different waystones, each with their own function."]
+			hide_until_deps_complete: true
+			id: "50BAA5F6E55583FA"
+			tasks: [{
+				id: "146E9FA926DFAA23"
+				title: "Waystones"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["50BAA5F6E55583FA"]
+			description: ["The regular waystone. Can sometimes be found in your world while exploring. Once activated, you will always be able to teleport to it as long as it hasn't been broken."]
+			id: "1F83342DE1289BFC"
+			tasks: [{
+				id: "5A1938F5342A719F"
+				item: "waystones:waystone"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["50BAA5F6E55583FA"]
+			description: ["Sharestones are great if you want to connect two points without having to activate them. They connect to each other automatically."]
+			id: "01EC7C56C0594E6C"
+			tasks: [{
+				id: "3CF46A2AE24BE3D6"
+				item: "waystones:sharestone"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["50BAA5F6E55583FA"]
+			description: ["Use this waystone if you want to teleport animals."]
+			id: "0C3AA2CC389CABAD"
+			tasks: [{
+				id: "4B0DBACA4D4FAB0F"
+				item: "waystones:warp_plate"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+	]
+	title: "Waystones"
+}

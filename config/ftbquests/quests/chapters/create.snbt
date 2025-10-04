@@ -1,0 +1,556 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "create"
+	group: "427DFECA3C4AB301"
+	icon: "create:cogwheel"
+	id: "060B06C00CAD5B95"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["1CD6AA5B661C7CCC"]
+			description: [
+				"Create, you either love it or hate it. While it may seem overwhelming at first, if you follow the steps, you will see that it is not as daunting as it seems."
+				""
+				"This questline focuses on getting the essentials for create and making it easy to double your production output for andesite alloys."
+				""
+				"&2Tip: It's always good to hover over items and see whether you can ponder them. Pondering them with a guide will give more indepth information about them.&r"
+			]
+			hide_until_deps_complete: true
+			id: "6FE9FEEB6A22B4B9"
+			tasks: [{
+				id: "690A99ED09DADFC9"
+				title: "The new age!"
+				type: "checkmark"
+			}]
+			title: "The new age"
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6FE9FEEB6A22B4B9"]
+			description: ["The essential for most of your create builds."]
+			id: "0E1F648F624524D9"
+			tasks: [{
+				id: "503CEE3CBF8567C9"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0E1F648F624524D9"]
+			description: ["Easy way to get your rotational force around."]
+			id: "2AB16CB63BE1BBDC"
+			tasks: [{
+				id: "47713B8DAB6C77CB"
+				item: "create:shaft"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0E1F648F624524D9"]
+			description: [
+				"Cogwheels are an amazing way to get your SU (stress units) around. You can also speed up the rotational force by putting a small cogwheel in the corner of a larger one, and then placing a large cogwheel onto the small one. You can repeat this process 3 times to get max speed."
+				""
+				"Take note that the faster your cogwheels are rotating, the more stress they will cause!"
+			]
+			id: "4F098E29406C6C2F"
+			tasks: [
+				{
+					id: "130AC0B221A80400"
+					item: "create:cogwheel"
+					type: "item"
+				}
+				{
+					id: "5E35945C3B0BD210"
+					item: "create:large_cogwheel"
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0E1F648F624524D9"]
+			description: ["Essential for many create machines. Also looking kinda pretty..."]
+			id: "66E43FADE60E695F"
+			tasks: [{
+				id: "158451A5F22D54FE"
+				item: "create:andesite_casing"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0E1F648F624524D9"]
+			description: [
+				"Vital for all your create machines to run. This produces SU (stress units) which can be transferred to your contraptions using shafts or cogs."
+				""
+				"You can connect waterwheels next to each other to get more SU. One waterwheel produces 256 SU."
+				""
+				"Only one side of the waterwheel needs flowing water."
+			]
+			id: "022BDED81F42947C"
+			tasks: [{
+				id: "3EA22DE8CD2964AF"
+				item: "create:water_wheel"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["022BDED81F42947C"]
+			description: ["Larger variant of the waterwheel. Produces double the SU (512) but is way slower."]
+			id: "0790B812B55F9790"
+			tasks: [{
+				id: "3A45B534B137A9FE"
+				item: "create:large_water_wheel"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["022BDED81F42947C"]
+			description: ["Necessity to create plates."]
+			id: "67C51CF08DB12889"
+			tasks: [{
+				id: "3A2E01B805F63E15"
+				item: "create:mechanical_press"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["67C51CF08DB12889"]
+			description: ["Doesn't let your items despawn, also helps with automating the processing of machines."]
+			id: "4DBB5ECB6FAD50B2"
+			tasks: [{
+				id: "116CE9B5F69FA6BC"
+				item: "create:depot"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["67C51CF08DB12889"]
+			description: ["Needs a high rotational speed to work!"]
+			id: "4A10219BC0FC08A1"
+			tasks: [{
+				id: "644B6EB87FAF349F"
+				item: "create:mechanical_mixer"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["67C51CF08DB12889"]
+			description: ["The basin, put your ingridients in here."]
+			id: "244C551D7A08E23E"
+			tasks: [{
+				id: "2D1D2428F3525115"
+				item: "create:basin"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"244C551D7A08E23E"
+				"4A10219BC0FC08A1"
+			]
+			description: [
+				"You can get double the amount of andesite alloys for the same resources using the mixer. Now you are ready to get into more advanced builds with create."
+				""
+				"&6Dev note: images will be added later, more info will be added in the future.&r"
+			]
+			id: "67E8D550F03D2FE7"
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [{
+				id: "21B0F9569AD47A3F"
+				title: "You made your first contraption!"
+				type: "checkmark"
+			}]
+			title: "Ready for the next level?"
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0E1F648F624524D9"]
+			description: ["When you hover over your create machines you can see how much SU (stress units) they produce and how much they consume."]
+			id: "264A566D0D4A7CAC"
+			tasks: [{
+				id: "31150B448C7B238E"
+				item: "create:goggles"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["67E8D550F03D2FE7"]
+			description: ["Fans are essential for every create-powered base. There are 4 fans you need: smelting, cooking, washing, and haunting. For this you will need lava, water, one campfire, one soul campfire. Placing each one in front of a fan will make it so the air blowing out from the fan will affect the items infront of it. Great for bulk processing!"]
+			id: "62328124477D2C04"
+			tasks: [{
+				id: "4E05204764FDF1F3"
+				item: "create:encased_fan"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["62328124477D2C04"]
+			description: ["Use the brass funnel if you want to filter your items."]
+			id: "58CC2F4D9B01E196"
+			tasks: [{
+				id: "2372F6B8685FE35A"
+				item: "create:brass_funnel"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["67E8D550F03D2FE7"]
+			description: ["Grinding time."]
+			id: "12F4F187CAE3DC17"
+			tasks: [{
+				id: "6E8ABA63E240AB4F"
+				item: "create:millstone"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0790B812B55F9790"]
+			description: ["Way more efficient than waterwheels, sails can produce a lot more SU. Place a block onto the windmill bearing and connect sails on all the 4 sides. One windmill bearing can use up to 128 windmill sails and generate 8192 SU."]
+			id: "7E04C19C0082D26D"
+			tasks: [
+				{
+					id: "5EF048FAD8D30191"
+					item: "create:white_sail"
+					type: "item"
+				}
+				{
+					id: "5A3142C8B629436D"
+					item: "create:windmill_bearing"
+					type: "item"
+				}
+			]
+			x: 3.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3FD3F2CA5A6EA9DA"]
+			description: ["Harvesters automatically harvest your crops and replant the seeds. Place them on the front of your contraptions."]
+			id: "5368F0FCC6C1448D"
+			tasks: [{
+				id: "7F89364EE881A7F5"
+				item: "create:mechanical_harvester"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["3FD3F2CA5A6EA9DA"]
+			description: ["Assuming you built the mechanical bearing part, it's time to put on the saws. Place the saws on the front, making sure they will hit the trees when they grow."]
+			id: "704B054499C48B48"
+			tasks: [{
+				id: "78C762FCF44FB736"
+				item: "create:mechanical_saw"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["4DBB5ECB6FAD50B2"]
+			description: ["Who doesn't want to make a factory?"]
+			id: "7A1CDFFBACF997AD"
+			tasks: [{
+				id: "772F2AAF6E3170DD"
+				item: "create:belt_connector"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["575E3AF92D5D5A06"]
+			description: ["&6Dev note: explanation coming soon. Check recipe in JEI for now.&r"]
+			id: "4EEF08ECE0EE2A30"
+			tasks: [{
+				id: "54466F5297EA1727"
+				item: "create:precision_mechanism"
+				type: "item"
+			}]
+			x: 13.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["67E8D550F03D2FE7"]
+			description: ["Used in more advanced recipes for which the crafting table is not enough."]
+			id: "575E3AF92D5D5A06"
+			tasks: [{
+				id: "5696BFABAAB6138A"
+				item: "create:mechanical_crafter"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["575E3AF92D5D5A06"]
+			description: [
+				"Getting a real upgrade now."
+				""
+				"To get it to work, you need a lot of rotational speed. One wheel needs to be turning one way, while the other needs to be turning in the opposite direction. This can easily be achieved with gearboxes."
+				""
+				"Minimum recommended SU per crushing wheel: 1024"
+			]
+			id: "24020B92B7C611F0"
+			tasks: [{
+				id: "4B4C95FF401CC72C"
+				item: "create:crushing_wheel"
+				type: "item"
+			}]
+			x: 11.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0E1F648F624524D9"]
+			description: ["Essential tool for dabbling with create. Try using it on pipes or chutes."]
+			id: "136F406E8B17E198"
+			tasks: [{
+				id: "25DAF408E204F5E3"
+				item: "create:wrench"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0E1F648F624524D9"]
+			description: ["The toolbox will give you easy access to create items, making building with create less tedious."]
+			id: "7E77FEEE18232838"
+			tasks: [{
+				id: "2E04D7C609D537D1"
+				item: "create:brown_toolbox"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["67E8D550F03D2FE7"]
+			id: "6897C234604D1F61"
+			tasks: [{
+				id: "1AD515D4779C502B"
+				item: "create:mechanical_drill"
+				type: "item"
+			}]
+			x: 9.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5368F0FCC6C1448D"]
+			description: ["Need to figure out the outline of your contraption? Use a plough to see the range of the harvesters."]
+			id: "65D923522D7416B9"
+			tasks: [{
+				id: "269994813632C272"
+				item: "create:mechanical_plough"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["4EEF08ECE0EE2A30"]
+			description: ["Allows you to set the speed of your machines."]
+			id: "7828678659D79862"
+			tasks: [{
+				id: "29951A7391C42572"
+				item: "create:rotation_speed_controller"
+				type: "item"
+			}]
+			x: 14.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["67E8D550F03D2FE7"]
+			description: ["Splish splash"]
+			id: "7021ABBE6AF77486"
+			tasks: [{
+				id: "78358DB4708061DD"
+				item: "create:spout"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2AB16CB63BE1BBDC"]
+			description: ["Need to extend your shafts in any way you'd like? Use this!"]
+			id: "6CACD015F08C4413"
+			tasks: [{
+				id: "18B5F55E0D4406B9"
+				item: "create:encased_chain_drive"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7E04C19C0082D26D"]
+			description: ["Advanced way to generate SU. This is for when you need several hundreds of thousands of SU for your contraptions."]
+			id: "2E149A51E7A916F6"
+			tasks: [{
+				id: "0B4CD305151D808F"
+				item: "create:steam_engine"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["4DBB5ECB6FAD50B2"]
+			description: ["Better than hoppers!"]
+			id: "2D1532FC08FA090C"
+			tasks: [{
+				id: "1863B4FF34961EEC"
+				item: "create:chute"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["243DF9CF4BEB7E93"]
+			description: ["Want to make an infinite lava source? Make a 25x25x16 pool of lava. If the lavapool is larger than 10000 blocks, then the hose wont drain any lava from the pool but still give you lava."]
+			id: "16D3ACF6893B90CC"
+			tasks: [{
+				id: "5D7036BF7BB7C0D8"
+				item: "create:hose_pulley"
+				type: "item"
+			}]
+			x: 13.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6CACD015F08C4413"]
+			description: ["Changes the direction that the shaft is turning."]
+			id: "22854B13AD7FD0D7"
+			tasks: [{
+				id: "77FCDD6E3E9D1F26"
+				item: "create:gearbox"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7828678659D79862"]
+			description: ["You have all the essentials and knowledge to build any contraptions you want, experiment and build your base to your desire!"]
+			id: "56D66ED635669632"
+			tasks: [{
+				id: "008281B14C9D5CA6"
+				title: "Graduated create academy!"
+				type: "checkmark"
+			}]
+			x: 16.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6E7D390C456ED7E8"]
+			description: ["Fluid container"]
+			id: "243DF9CF4BEB7E93"
+			tasks: [{
+				id: "7F6D5C776C5E0E89"
+				item: "create:fluid_tank"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7021ABBE6AF77486"]
+			description: ["Pump fluids in and out a spout using a mechanical pump."]
+			id: "6E7D390C456ED7E8"
+			tasks: [{
+				id: "12694690C643BA4A"
+				item: "create:mechanical_pump"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["58CC2F4D9B01E196"]
+			description: ["Use this filter to decide which items you want to filter out."]
+			id: "56F2707C19E9503A"
+			tasks: [{
+				id: "504038CC988296AD"
+				item: "create:attribute_filter"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["67E8D550F03D2FE7"]
+			description: [
+				"Using this you can easily make circular farms for harvesting crops or trees. Place a mechanical bearing, add a waterwheel under it, and connect a few blocks to it. Stick it all together with glue and add some &lVANILLA&r chests on top. Non-vanilla chests may not work to collect the items."
+				""
+				"Further explanation for the build is in the harvester / saw respectively."
+			]
+			id: "3FD3F2CA5A6EA9DA"
+			tasks: [{
+				id: "40196839C68448C5"
+				item: "create:mechanical_bearing"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["704B054499C48B48"]
+			description: ["Saws do not automatically replant your saplings! You need to set up a line of deployers on the back of your contraption to make sure they replant the saplings."]
+			id: "7B037A8E03592B0E"
+			tasks: [{
+				id: "25F35A167AFFD700"
+				item: "create:deployer"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["3FD3F2CA5A6EA9DA"]
+			description: ["At the outer end, you need to place a portable storage interface to pull the items out of the machine."]
+			id: "22B02D029D07C925"
+			tasks: [{
+				id: "606C5432DB57DBF6"
+				item: "create:portable_storage_interface"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -1.0d
+		}
+	]
+	title: "Create"
+}

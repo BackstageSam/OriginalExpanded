@@ -1,0 +1,10 @@
+{
+	chapter_groups: [
+		{ id: "5DD9D23F04DE3000", title: "Gear" }
+		{ id: "723BB032FE6A3B30", title: "Storage" }
+		{ id: "4DC2EBA7AD3DB435", title: "Farming" }
+		{ id: "427DFECA3C4AB301", title: "Automation" }
+		{ id: "51E865286B110947", title: "Exploration" }
+		{ id: "653E42BC2F60695E", title: "Misc" }
+	]
+}
